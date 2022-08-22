@@ -1,3 +1,25 @@
 site_name: Technical DRG Archives
 theme:
   name: material
+  palette:
+    primary: amber
+    accent: deep purple
+  logo: assets/placeholder-logo.png
+  favicon: assets/placeholder-favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+nav:
+  - Home: index.md
+  - Tags: tags.md
