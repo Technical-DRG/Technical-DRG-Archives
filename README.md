@@ -15,6 +15,13 @@ Then, install [`mkdocs-material`][mkdocs-material] via
 pip install mkdocs-material
 ```
 
+Also install [`mkdocs-git-revision-date-localized-plugin`](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
+via
+
+```bash
+pip install mkdocs-git-revision-date-localized-plugin
+```
+
 [mkdocs-material]: https://github.com/squidfunk/mkdocs-material
 
 ### mkdocs Commands

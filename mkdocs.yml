@@ -15,10 +15,15 @@ theme:
     - navigation.indexes
     - navigation.top
 
+repo_name: Technical-DRG/Technical-DRG-Archives
+repo_url: https://github.com/Technical-DRG/Technical-DRG-Archives
+
 plugins:
   - search
   - tags:
       tags_file: tags.md
+  - git-revision-date-localized:
+      type: iso_datetime
 
 nav:
   - Home: index.md
