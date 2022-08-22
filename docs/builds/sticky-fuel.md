@@ -176,11 +176,6 @@ effective against Shredders, as they have a slightly larger health pool.
 
     Take option 2, **T5B Targets Explode**.
 
-<figure markdown>
-  ![Targets Explode vs. a cloud of Shockers](https://dummyimage.com/600x400/){ width="300", loading=lazy }
-  <figcaption>Targets Explode vs. a cloud of Shockers</figcaption>
-</figure>
-
 ## Secondary and Grenades
 
 While the Wave Cooker has some interesting temperature shock synergy with sticky flames, it
