@@ -78,4 +78,10 @@ nav:
   - Data:
     - data/index.md
     - "A look at gk2 breakpoints with AISE and BoM": data/gk2-bp-aise-vs-bom.md
+  - Guides:
+    - guides/index.md
+  - Builds:
+    - builds/index.md
+  - Breakdowns:
+    - breakdowns/index.md
   - Tags: tags.md
