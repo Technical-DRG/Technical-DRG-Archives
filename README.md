@@ -1,6 +1,6 @@
 # Technical DRG Archives
 
-Static site archive for posts on [/r/technicaldrg](https://www.reddit.com/r/technicaldrg/).
+Static site archive for posts on [/r/technicaldrg](https://www.reddit.com/r/technicaldrg/). Deployed live at [Technical DRG Archives](https://technical-drg.github.io/Technical-DRG-Archives/).
 
 ![Github Pages Deployment](https://github.com/Technical-DRG/Technical-DRG-Archives/actions/workflows/ci.yml/badge.svg)
 
