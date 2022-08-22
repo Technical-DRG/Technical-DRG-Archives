@@ -82,6 +82,7 @@ nav:
     - guides/index.md
   - Builds:
     - builds/index.md
+    - Sticky Fuel: builds/sticky-fuel.md
   - Breakdowns:
     - breakdowns/index.md
   - Tags: tags.md
