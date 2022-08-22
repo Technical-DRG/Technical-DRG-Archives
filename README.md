@@ -15,6 +15,14 @@ Then, install [`mkdocs-material`][mkdocs-material] via
 pip install mkdocs-material
 ```
 
+sometimes differing Python versions may require you to additionally manually
+install search plugins:
+
+```bash
+pip install mkdocs-localsearch                                                                                                                                                                                109ms  Mon Aug 22 16:45:56 2022
+pip install mdx-spanner
+```
+
 [mkdocs-material]: https://github.com/squidfunk/mkdocs-material
 
 ### mkdocs Commands
