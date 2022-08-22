@@ -80,6 +80,7 @@ nav:
     - "A look at gk2 breakpoints with AISE and BoM": data/gk2-bp-aise-vs-bom.md
   - Guides:
     - guides/index.md
+    - An Introduction to Modded Difficulties: guides/intro-modded-difficulties.md
   - Builds:
     - builds/index.md
     - Sticky Fuel: builds/sticky-fuel.md
