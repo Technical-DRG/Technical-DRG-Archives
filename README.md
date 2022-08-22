@@ -2,6 +2,16 @@
 
 Static site archive for posts on /r/technicaldrg.
 
+## Producing Content
+
+Create suitable Markdown (augmented by various extensions) files under `docs/`.
+
+For the supported markdown extensions, see [Python Markdown](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/)
+and [Python Markdown Extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/).
+For the most up-to-date reference of which plugins are enabled, see the `markdown_extensions`
+section in `mkdocs.yml`. See also [PyMdown Extensions Documentation](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
+for usage reference.
+
 ## Development
 
 This archive uses [`mkdocs-material`][mkdocs-material] as the static site
