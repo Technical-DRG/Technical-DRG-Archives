@@ -3,7 +3,7 @@ tags:
     - burning-hell
     - minigun
     - gunner
-    - build
+    - builds
     - overclock
     - leadstorm
 ---
@@ -20,15 +20,15 @@ Gunner is a fairly straightforward class compared to the others, but he still ha
 versatile and flexible builds in his arsenal. Arguably his most powerful weapon is the Lead Storm
 minigun, which can be built for simultaneous massive single target DPS and swarm clear with the
 confusingly named Lead Storm overclock. This post, however, will focus on a more aggressive
-playstyle: Burning Hell.
+playstyle: **Burning Hell**.
 
 All numbers in this post are taken from the Equipment Terminal in-game.
 
 !!! tip "TL;DR"
 
     **12223** or **32221** with **Burning Hell** are mostly your best options. Pair with
-    **Volatile Bullets** (Bulldog OC) for immense weakpoint damage and cluster grenades for a large
-    on-demand area stun.
+    [**Volatile Bullets**](./volatile-bullets.md) (Bulldog OC) for immense weakpoint damage and
+    cluster grenades for a large on-demand area stun.
 
 !!! info "Weapon Heat Crosshair Mod"
 
@@ -39,9 +39,9 @@ All numbers in this post are taken from the Equipment Terminal in-game.
 
 While Lead Storm (or LSLS) is a very powerful overclock, it requires exceptional positioning skill,
 decent aim, and is very unforgiving. Burning Hell is a much safer option, and if you can hit your
-Volatile Bullets shots, you don't lose out on much damage against chunky targets. Burning Hell also
-has arguably more swarm clear potential than LSLS due to its ability to ignite swarms much quicker
-and more easily, which allows fire spread to take effect faster.
+[Volatile Bullets](./volatile-bullets.md) shots, you don't lose out on much damage against chunky
+targets. Burning Hell also has arguably more swarm clear potential than LSLS due to its ability to
+ignite swarms much quicker and more easily, which allows fire spread to take effect faster.
 
 ## Tier 1
 
@@ -91,7 +91,7 @@ Brundles. However, since Burning Hell has low base damage and relies largely on 
 deal its full damage potential, this is not a great pick.
 
 Stun helps make an already safe build even safer. It allows you to more reliably get up close to
-bugs when needed, and also helps ensure that you hit Volatile Bullets shots on targets with small
+bugs when needed, and also helps ensure that you hit [Volatile Bullets](./volatile-bullets.md) shots on targets with small
 weakpoints, such as Menaces or Wardens.
 
 Blowthrough is good on a direct damage build, but again Burning Hell relies on its fire capabilities
@@ -148,38 +148,40 @@ cone, which is the largest portion of your damage.
 
 Hot Bullets is optimal for team play. It provides quick long range ignition on enemies, which is
 powerful against Grunt packs because of fire spread, and is useful against tankier HVTS such as
-Wardens and Menaces that you can finish off with a Volatile Bullet shot or two.
+Wardens and Menaces that you can finish off with a [Volatile Bullets](./volatile-bullets.md) shot or two.
 
 !!! tip "Verdict"
 
     Take option 1 **Aggressive Venting** if you're running solo or in a team that can ignite far
     targets for you. Take option 3 **Hot Bullets** if you're in a team that you trust to deal with
-    trash mobs so that you can focus on igniting targets for **Volatile Bullets**.
+    trash mobs so that you can focus on igniting targets for
+    [**Volatile Bullets**](./volatile-bullets.md).
 
 ## Secondary and Grenades
 
-As mentioned many times before, **Volatile Bullets** Bulldog synergizes exceptionally well with this
-build. It provides massive single target damage that you can easily take advantage of with Hot
-Bullets. If you're using **Aggressive Venting** while solo, I would recommend **Elephant Rounds**
-instead, as you won't be able to ignite far off targets easily (barring incendiary grenades).
+As mentioned many times before, [**Volatile Bullets**](./volatile-bullets.md) Bulldog synergizes
+exceptionally well with this build. It provides massive single target damage that you can easily
+take advantage of with Hot Bullets. If you're using **Aggressive Venting** while solo, I would
+recommend **Elephant Rounds** instead, as you won't be able to ignite far off targets easily
+(barring incendiary grenades).
 
 Cluster grenades and incendiary grenades are both competitive choices. Sticky grenades, IMO, don't
 do enough swarm clear on their own for them to be worth it, even with their Fear potential. Clusters
 can be used to wipe large groups of trash or as an on-demand large area stun button for Mactera.
 Incendiaries have similar swarm clear to clusters, but they trade the stun potential for an instant
-ignition source, which can be useful with Volatile Bullets.
+ignition source, which can be useful with [Volatile Bullets](./volatile-bullets.md).
 
 ## Playstyle and Tips
 
-A Burning Hell Gunner needs to be on the ball with his Volatile Bullets shots. You need to be paying
-attention to what you and your teammates have ignited, are going to ignite, and which heavy hitting
-enemies are currently on the playing field. Proper shield placement has a high skill ceiling, but
-can be highly rewarding.
+A Burning Hell Gunner needs to be on the ball with his [Volatile Bullets](./volatile-bullets.md)
+shots. You need to be paying attention to what you and your teammates have ignited, are going to
+ignite, and which heavy hitting enemies are currently on the playing field. Proper shield placement
+has a high skill ceiling, but can be highly rewarding.
 
 - Play close, but not too close. Corral the swarm; don't jump into the middle of it.
-- If you have trash clearing teammates, such as a Sticky Fuel driller, save your ammo and use your
-fire cone for self defense against Naedocytes, rogue Swarmers, and small Grunt packs. Save the
-larger clumps for classes who can deal with them more efficiently.
+- If you have trash clearing teammates, such as a [Sticky Fuel](./sticky-fuel.md) driller, save your
+ammo and use your fire cone for self defense against Naedocytes, rogue Swarmers, and small Grunt
+packs. Save the larger clumps for classes who can deal with them more efficiently.
 - Make use of both the cone and **Hot Bullets**, if you have it. You can b-hop and "dance" around
 slightly in front of a swarm to allow yourself to heat them with the cone while not getting bitten
 yourself. Pepper each enemy with a couple of shots and let the fire damage do the rest, rather than
@@ -187,8 +189,9 @@ trying to kill them one by one.
 - If a large Mactera cloud appears, don't focus them down individually until they're dead. Attempt to
 stun them instead, and keep rotating shots between them. Focus on stunning Trijaws first, as Spawn
 and Brundles can be kited more easily.
-- Don't feel bad about wasting ammo on Grunts or walls while trying to get to **Hot Bullets**. The fire
-status effect and Volatile Bullets will usually make up for the lost damage.
+- Don't feel bad about wasting ammo on Grunts or walls while trying to get to **Hot Bullets**. The
+fire status effect and [Volatile Bullets](./volatile-bullets.md) will usually make up for the lost
+damage.
 - This goes for any Gunner playstyle, but try to use shields proactively, rather than reactively. A
 team of 4 living dwarves can take advantage of a shield much more effectively than 3 dwarves trying
 to revive someone who died because there wasn't a shield down. Shield before you're overrun, rather

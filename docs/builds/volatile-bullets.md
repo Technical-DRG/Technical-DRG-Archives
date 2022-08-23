@@ -4,7 +4,7 @@ tags:
     - bulldog
     - gunner
     - overclock
-    - build
+    - builds
 ---
 
 # Build Breakdown: Volatile Bullets (Gunner's Bulldog Overclock, Modded Hazard 6x2)

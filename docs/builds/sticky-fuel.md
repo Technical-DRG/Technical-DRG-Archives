@@ -90,9 +90,9 @@ only**. **Triple Filtered Fuel** adds 10 heat applied per damage tick, for a tot
 **Sticky Flame Duration** adds 3 more seconds of sticky.
 
 - Extra direct damage on a sticky-focused build is useless.
-- Extra heat, while slightly useful for igniting targets for a Volatile Bullets Gunner, is still
-overshadowed by longer sticky flames. However, Triple Filtered Fuel is a good choice when facing
-Rival enemies.
+- Extra heat, while slightly useful for igniting targets for a [Volatile
+Bullets](./volatile-bullets.md) Gunner, is still overshadowed by longer sticky flames. However,
+Triple Filtered Fuel is a good choice when facing Rival enemies.
 - 3 seconds of sticky, combined with Sticky Fuel itself, gives us 11 seconds of sticky per
 application so far. This is a fairly obvious choice for a sticky-based playstyle.
 
@@ -193,11 +193,11 @@ single target damage is invaluable. Axes are the way to go.
 ## Playstyle and Tips
 
 A Sticky Fuel Driller becomes the cornerstone of their team. You are the primary protection against
-Grunts and Swarmers, and you provide a quick and constant ignition source for a Volatile Bullets
-Gunner, who acts as your heavy hitter against larger targets. For the most part, you become the team
-leader; you make the decisions, and the rest of the team either follows or more than likely gets
-overwhelmed. Taking Sticky Fuel allows the rest of the team to spec more heavily into special- and
-tank-clearing roles.
+Grunts and Swarmers, and you provide a quick and constant ignition source for a [Volatile
+Bullets](./volatile-bullets.md) Gunner, who acts as your heavy hitter against larger targets. For
+the most part, you become the team leader; you make the decisions, and the rest of the team either
+follows or more than likely gets overwhelmed. Taking Sticky Fuel allows the rest of the team to spec
+more heavily into special- and tank-clearing roles.
 
 - Ideal sticky placement is a few distinct lines of sticky flames on a bug path. If you place sticky
   multiple times on a single line, you're only getting one line worth of sticky damage; they do not
