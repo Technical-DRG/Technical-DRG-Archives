@@ -24,8 +24,10 @@ Unstoppable Perk states:
     Nothing holds you back! Environmental slow-down effects are reduced by 50%! You move 25% faster
     while carrying heavy objects!
 
-The following is a list of effects that are considered "*environmental slow-down effects*" by
-the game (non-exhaustive):
+However, Unstoppable doesn't *only* mitigate environmental slowdown effects -- it apparently also
+mitigates slowdown effects from some non-environmental sources too, such as Slasher slow. Here is
+an incomplete list of environmental and non-environmental slowdown effects that Unstoppable seems to
+mitigate:
 
 !!! warning "Incomplete List"
 
@@ -33,16 +35,29 @@ the game (non-exhaustive):
 
 - Cobwebs
 - Goo (both naturally generated, like in Fungus Bogs, and those produced by Goo Bombers)
-- Heavy snow (naturally occuring in Glacial Strata)
+- Deep snow (naturally occuring in Glacial Strata)
 - Storms (ice storms and sand storms)
 - Earthquakes (like in Magma Core and Glacial Strata)
 - Frost Praetorian Frost Spray
 - Electric Crystals (Crystalline Caverns)
+- Slasher attack slow
+    - `FSD\Content\Enemies\Spider\Grunt\Attacker\STE_GruntAttacker_Slow.uasset`
+- Shocker slow (Dense Biozone, Glacial Strata)
+    - `FSD\Content\Landscape\ReactiveTerrain\STE_ElectricJelly_Stun.uasset`
 
-!!! error "Environmental?"
+Pending verification:
 
-    The in-game description of the perk states "environmental" slow-down effects, even though some
-    of these effects could be interpreted as "enemy-induced" slow-down effects.
+- Creeper vines DoT and SideDamage (Hollow Bough)
+    - `FSD\Content\Landscape\ReactiveTerrain\STE_CreeperVine_DoT.uasset`,
+    - `FSD\Content\Landscape\ReactiveTerrain\STE_CreeperVine_SideDamage.uasset`
+- Hollow Bough branches `FSD\Content\Landscape\ReactiveTerrain\STE_HollowBoughBranches.uasset`
+- Hot Rock (Magma Core) `FSD\Content\Landscape\ReactiveTerrain\STE_HotRockRT-DoT.uasset`
+- Low Friction Ice (Glacial Strata)
+  `FSD\Content\Landscape\ReactiveTerrain\STE_LowFrictionIceRT.uasset`
+
+Notably unaffected:
+
+- Pickaxe slow when you use it `FSD\Content\WeaponsNTools\Pickaxe\STE_Pickaxe_SlowUser.uasset`
 
 ## Experimental Footage
 
@@ -56,26 +71,20 @@ the game (non-exhaustive):
 - [Unstoppable | Deep Rock Galactic Wiki](https://deeprockgalactic.fandom.com/wiki/Unstoppable)
 - `FSD-WindowsNoEditor\FSD\Content\GameElements\KPI\Perks\PERK_StrongBack.uasset`
     - `PST_MovementSpeedPenaltyReduction`
-        - `EPawnStatType::Additive`
 
-!!! construction "Pending Game Files Verification"
+!!! construction "Pending Game Files and Empirical Verification"
 
     The list here isn't verified via game files yet. Looking for method to search through all
-    `STE_*` files that have a
-
-    ```json
-    StatChangeStatusEffectItem {
-        Stat {
-            PST_MovementSpeedEnvironmentalPenalty: -10 // for example
-        }
-    }
-    ```
-
+    `STE_*` files that have a `PST_MovementSpeedEnvironmentalPenalty` or `PST_MovementSpeedPenalty`
     property. Examples:
 
-    - `FSD-WindowsNoEditor\FSD\Content\Landscape\Biomes\Biomes_Ingame\SandblastedCorridors\STE_SandStorm-Slowdown.uasset`
-    - `FSD-WindowsNoEditor\FSD\Content\Enemies\FlyingBug\Bomber\STE_BomberPuddle.uasset`
+    - `FSD\Content\Landscape\Biomes\Biomes_Ingame\SandblastedCorridors\STE_SandStorm-Slowdown.uasset`
+    - `FSD\Content\Enemies\FlyingBug\Bomber\STE_BomberPuddle.uasset`
+    - `FSD\Content\Enemies\Spider\Grunt\Attacker\STE_GruntAttacker_Slow.uasset`
 
-    ```
-    fdfind "STE_" Enemies/ Landscape/ Critters/ LevelElements/ GameElements/ Landscape/
-    ```
+    The game also seem to use multiple properties that are related to movement speed and penalities
+    affecting it:
+
+    - `PST_MovementSpeed`
+    - `PST_MovementSpeedPenalty`
+    - `PST_MovementSpeedEnvironmentalPenalty`
