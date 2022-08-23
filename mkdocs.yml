@@ -97,4 +97,7 @@ nav:
     - Perks:
       - game-mechanics/perks/index.md
       - Unstoppable: game-mechanics/perks/unstoppable.md
+    - Weapons and Overclocks:
+      - game-mechanics/weapons-overclocks/index.md
+      - Bullets of Mercy: game-mechanics/weapons-overclocks/bullets-of-mercy.md
   - Tags: tags.md
