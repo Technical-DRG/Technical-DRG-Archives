@@ -50,3 +50,28 @@ the game (non-exhaustive):
   <iframe width="560" height="315" src="https://www.youtube.com/embed/M8wAqeL2tRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <figcaption>Unstoppable works against Electric Crystal slow-down effect</figcaption>
 </figure>
+
+## References
+
+- [Unstoppable | Deep Rock Galactic Wiki](https://deeprockgalactic.fandom.com/wiki/Unstoppable)
+- `FSD-WindowsNoEditor\FSD\Content\GameElements\KPI\Perks\PERK_StrongBack.uasset`
+    - `PST_MovementSpeedPenaltyReduction`
+        - `EPawnStatType::Additive`
+
+!!! construction "Pending Game Files Verification"
+
+    The list here isn't verified via game files yet. Looking for method to search through all
+    `STE_*` files that have a
+
+    ```json
+    StatChangeStatusEffectItem {
+        Stat {
+            PST_MovementSpeedEnvironmentalPenalty: -10 // for example
+        }
+    }
+    ```
+
+    property. Examples:
+
+    - `FSD-WindowsNoEditor\FSD\Content\Landscape\Biomes\Biomes_Ingame\SandblastedCorridors\STE_SandStorm-Slowdown.uasset`
+    - `FSD-WindowsNoEditor\FSD\Content\Enemies\FlyingBug\Bomber\STE_BomberPuddle.uasset`
