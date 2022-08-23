@@ -24,8 +24,10 @@ Unstoppable Perk states:
     Nothing holds you back! Environmental slow-down effects are reduced by 50%! You move 25% faster
     while carrying heavy objects!
 
-However, Unstoppable does not *only* mitigate environmental slowdown effects -- it apparently also
-mitigates slowdown effects from non-environmental sources too, such as Slasher slow.
+However, Unstoppable doesn't *only* mitigate environmental slowdown effects -- it apparently also
+mitigates slowdown effects from some non-environmental sources too, such as Slasher slow. Here is
+an incomplete list of environmental and non-environmental slowdown effects that Unstoppable seems to
+mitigate:
 
 !!! warning "Incomplete List"
 
@@ -53,12 +55,9 @@ Pending verification:
 - Low Friction Ice (Glacial Strata)
   `FSD\Content\Landscape\ReactiveTerrain\STE_LowFrictionIceRT.uasset`
 
-!!! error "Environmental?"
+Notably unaffected:
 
-    The in-game description of the perk states "environmental" slow-down effects, even though some
-    of these effects could be interpreted as "enemy-induced" slow-down effects. Specifically,
-    status effects `STE_*` with `PST_MovementSpeedPenalty` seem to be affected (not every one of
-    them have been confirmed to work with Unstoppable).
+- Pickaxe slow when you use it `FSD\Content\WeaponsNTools\Pickaxe\STE_Pickaxe_SlowUser.uasset`
 
 ## Experimental Footage
 
@@ -72,7 +71,6 @@ Pending verification:
 - [Unstoppable | Deep Rock Galactic Wiki](https://deeprockgalactic.fandom.com/wiki/Unstoppable)
 - `FSD-WindowsNoEditor\FSD\Content\GameElements\KPI\Perks\PERK_StrongBack.uasset`
     - `PST_MovementSpeedPenaltyReduction`
-        - `EPawnStatType::Additive`
 
 !!! construction "Pending Game Files and Empirical Verification"
 
@@ -83,3 +81,10 @@ Pending verification:
     - `FSD\Content\Landscape\Biomes\Biomes_Ingame\SandblastedCorridors\STE_SandStorm-Slowdown.uasset`
     - `FSD\Content\Enemies\FlyingBug\Bomber\STE_BomberPuddle.uasset`
     - `FSD\Content\Enemies\Spider\Grunt\Attacker\STE_GruntAttacker_Slow.uasset`
+
+    The game also seem to use multiple properties that are related to movement speed and penalities
+    affecting it:
+
+    - `PST_MovementSpeed`
+    - `PST_MovementSpeedPenalty`
+    - `PST_MovementSpeedEnvironmentalPenalty`
