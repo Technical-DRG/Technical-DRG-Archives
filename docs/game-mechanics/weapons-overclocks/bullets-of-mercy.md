@@ -13,6 +13,9 @@ tags:
 
     Title Update 36, Patch 6
 
+For Bullets of Mercy breakpoints, see [GK2 Breakpoints: AISE vs
+BoM](./../../data/gk2-bp-aise-vs-bom.md).
+
 ## What Triggers Bullets of Mercy Bonus Damage?
 
 The OC's in game description states that
@@ -103,3 +106,4 @@ human-readable form:
 *[IFG]: Inhibitor-Field Generator
 *[DoT]: Damage over Time
 *[TEF]: Thermal Exhaust Feedback
+*[AISE]: AI Stability Engine
