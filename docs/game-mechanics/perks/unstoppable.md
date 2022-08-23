@@ -37,8 +37,16 @@ the game (non-exhaustive):
 - Storms (ice storms and sand storms)
 - Earthquakes (like in Magma Core and Glacial Strata)
 - Frost Praetorian Frost Spray
+- Electric Crystals (Crystalline Caverns)
 
 !!! error "Environmental?"
 
     The in-game description of the perk states "environmental" slow-down effects, even though some
     of these effects could be interpreted as "enemy-induced" slow-down effects.
+
+## Experimental Footage
+
+<figure markdown>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/M8wAqeL2tRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <figcaption>Unstoppable works against Electric Crystal slow-down effect</figcaption>
+</figure>
