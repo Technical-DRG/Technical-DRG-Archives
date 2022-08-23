@@ -75,3 +75,7 @@ the game (non-exhaustive):
 
     - `FSD-WindowsNoEditor\FSD\Content\Landscape\Biomes\Biomes_Ingame\SandblastedCorridors\STE_SandStorm-Slowdown.uasset`
     - `FSD-WindowsNoEditor\FSD\Content\Enemies\FlyingBug\Bomber\STE_BomberPuddle.uasset`
+
+    ```
+    fdfind "STE_" Enemies/ Landscape/ Critters/ LevelElements/ GameElements/ Landscape/
+    ```
