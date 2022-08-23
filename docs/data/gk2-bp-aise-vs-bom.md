@@ -10,10 +10,10 @@ tags:
 
 # A Look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
 
-| Post Information   |                                                                                                                                                   |
-|:-------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Post Info          |                                                                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Author             | u/littlebobbytables9                                                                                                                              |
-| Date               | 2022-05-29                                                                                                                                        |
+| Post Date          | 2022-05-29                                                                                                                                        |
 | Original Post Link | [A look at gk2 breakpoints with AISE and BoM](https://www.reddit.com/r/technicaldrg/comments/uzy9ua/a_look_at_gk2_breakpoints_with_aise_and_bom/) |
 
 These two OCs are largely considered the only two worth using for the gk2, but some people put AISE

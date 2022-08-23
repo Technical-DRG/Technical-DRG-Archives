@@ -6,11 +6,11 @@ tags:
 
 # An Introduction to Modded Difficulties
 
-| Post Info          |                                                                                          |
-|--------------------|------------------------------------------------------------------------------------------|
-| Author             | u/littlebobbytables9                                                                     |
-| Date               | 2022-06-07                                                                               |
-| Original Post Link | <https://www.reddit.com/r/technicaldrg/comments/v6l5hf/an_intro_to_modded_difficulties/> |
+| Post Info          |                                                                                                                           |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Author             | u/littlebobbytables9                                                                                                      |
+| Post Date          | 2022-06-07                                                                                                                |
+| Original Post Link | [An intro to modded difficulties](https://www.reddit.com/r/technicaldrg/comments/v6l5hf/an_intro_to_modded_difficulties/) |
 
 Since a lot of the posts in here are going to reference difficulty mods, I thought it would be good
 to have a quick overview of the various mods and the effect those have on gameplay.
