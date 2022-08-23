@@ -8,7 +8,7 @@ tags:
     - leadstorm
 ---
 
-# Build Breakdown: Burning Hell (Gunner's Leadstorm Overclock)
+# Build Breakdown: Burning Hell (Gunner's Leadstorm Overclock, Modded Hazard 6x2)
 
 | Post Info          |                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

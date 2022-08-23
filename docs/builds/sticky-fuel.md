@@ -12,12 +12,12 @@ tags:
 
 # Build Breakdown: Sticky Fuel (Driller's CRSPR, Modded Hazard 6x2)
 
-| Post Info           |                                                                                                            |
-|---------------------|------------------------------------------------------------------------------------------------------------|
-| Author              | u/Virryn__                                                                                                 |
-| Post Date           | 2022-05-29                                                                                                 |
-| Intended Difficulty | Modded, e.g. 5x2, 6x2, 7x1.5                                                                               |
-| Original Post Link  | <https://www.reddit.com/r/technicaldrg/comments/uzy4uq/build_breakdown_sticky_fuel_drillers_crspr_modded/> |
+| Post Info           |                                                                                                                                                                               |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Author              | u/Virryn__                                                                                                                                                                    |
+| Post Date           | 2022-05-29                                                                                                                                                                    |
+| Intended Difficulty | Modded, e.g. 5x2, 6x2, 7x1.5                                                                                                                                                  |
+| Original Post Link  | [BUILD BREAKDOWN: Sticky Fuel (Driller's CRSPR) \[MODDED: Haz6x2\]](https://www.reddit.com/r/technicaldrg/comments/uzy4uq/build_breakdown_sticky_fuel_drillers_crspr_modded/) |
 
 Since no one else has posted anything here yet, I figured I'd break the ice with one of the most
 popular and powerful builds in modded difficulties. I'm new to Reddit so forgive any weird
