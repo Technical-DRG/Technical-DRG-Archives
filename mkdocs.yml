@@ -92,4 +92,9 @@ nav:
     - Volatile Bullets: builds/volatile-bullets.md
   - Breakdowns:
     - breakdowns/index.md
+  - Game Mechanics:
+    - game-mechanics/index.md
+    - Perks:
+      - game-mechanics/perks/index.md
+      - Unstoppable: game-mechanics/perks/unstoppable.md
   - Tags: tags.md
