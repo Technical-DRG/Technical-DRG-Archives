@@ -150,7 +150,7 @@ especially without the potential for Fearing bugs to get them to expose their we
 As stated above, fire-based primaries are your best options. These include [**Burning
 Hell**](./burning-hell.md) and/or **Hot Bullets** Lead Storm, or the Hurricane with **Napalm-Infused
 Rounds**. It also massively helps to have a CRSPR Driller, **Inferno** Breach Cutter / **Incendiary
-Compound** PGL Engineer, or **White Phosphorous** Boomstick Scout on your team.
+Compound** PGL Engineer, or **White Phosphorus** Boomstick Scout on your team.
 
 While the obvious choice is incendiary grenades, if you have a fire-based team composition these
 largely become redundant if you're using them solely for ignition, though they can still be handy
