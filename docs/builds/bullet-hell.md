@@ -10,6 +10,12 @@ tags:
 
 # Build Breakdoown: Bullet Hell (Gunner's Leadstorm Overclock, Modded Hazard 6x2)
 
+| Post Info          |                                                                                                                                                                                |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Author             | u/Shotgun-Crocodile                                                                                                                                                            |
+| Post Date          | 2022-07-26                                                                                                                                                                     |
+| Original Post Link | [BUILD BREAKDOWN: Bullet Hell (Gunner's Lead Storm) \[MODDED: Haz6x2\]](https://www.reddit.com/r/technicaldrg/comments/w8aqhs/build_breakdown_bullet_hell_gunners_lead_storm/) |
+
 Bullet hell is probably one of the most widely disparaged overclocks in the game. It's often
 compared unfavorably to the base auto cannon, and simply dismissed as useless. In this build
 breakdown I will be showing why this is an unfair comparison, and why for me bullet hell ranks as in
