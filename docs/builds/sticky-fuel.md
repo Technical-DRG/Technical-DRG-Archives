@@ -1,6 +1,6 @@
 ---
 tags:
-    - builds
+    - build
     - crspr
     - sticky-fuel
     - sticky-flames

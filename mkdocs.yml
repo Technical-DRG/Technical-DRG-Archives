@@ -81,7 +81,8 @@ nav:
   - Home: index.md
   - Data:
     - data/index.md
-    - "A look at gk2 breakpoints with AISE and BoM": data/gk2-bp-aise-vs-bom.md
+    - A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy: data/gk2-bp-aise-vs-bom.md
+    - M1000 Classic Breakpoints: data/m1000-classic-breakpoints.md
   - Guides:
     - guides/index.md
     - An Introduction to Modded Difficulties: guides/intro-modded-difficulties.md
@@ -91,6 +92,7 @@ nav:
     - Burning Hell: builds/burning-hell.md
     - Bullet Hell: builds/bullet-hell.md
     - Volatile Bullets: builds/volatile-bullets.md
+    - Multi-Choice M1000 Classic: builds/m1000.md
   - Breakdowns:
     - breakdowns/index.md
   - Game Mechanics:

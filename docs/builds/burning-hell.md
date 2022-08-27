@@ -3,9 +3,10 @@ tags:
     - burning-hell
     - minigun
     - gunner
-    - builds
+    - build
     - overclock
     - leadstorm
+    - hazard-6x2
 ---
 
 # Build Breakdown: Burning Hell (Gunner's Leadstorm Overclock, Modded Hazard 6x2)

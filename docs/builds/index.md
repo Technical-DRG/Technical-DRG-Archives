@@ -32,3 +32,10 @@ contains a **Post Info** section that links back to the original
 ### "Bulldog" Heavy Revolver
 
 - [Volatile Bullets](./volatile-bullets.md) Overclock.
+
+## Scout Builds
+
+### M1000 Classic
+
+- [Multi-Choice M1000 Classic](./m1000.md) with **Active Stability System**, **Minimal Clips**,
+  **Hoverclock**, and **Electrifying Focus Shots** Overclocks.
