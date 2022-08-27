@@ -82,6 +82,7 @@ nav:
   - Data:
     - data/index.md
     - "A look at gk2 breakpoints with AISE and BoM": data/gk2-bp-aise-vs-bom.md
+    - M1000 Classic Breakpoints: data/m1000-classic-breakpoints.md
   - Guides:
     - guides/index.md
     - An Introduction to Modded Difficulties: guides/intro-modded-difficulties.md
