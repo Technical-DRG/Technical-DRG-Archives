@@ -139,7 +139,7 @@ Interesting notes:
   armor break it is possible, but you need to hit a different armor plate every time, which means
   you will usually end up needing 4 hipfires.
 
-??? info "u/SheepHerdr's comment on grunt, slasher, web spitter and acid spitter armor being slightly bugged"
+??? quote "u/SheepHerdr's comment on grunt, slasher, web spitter and acid spitter armor being slightly bugged"
 
     Original Link: <https://www.reddit.com/r/DeepRockGalactic/comments/wdchs5/back_armor_plate_on_grunts_unbreakable_with_m1000/iihk73o/>.
 
