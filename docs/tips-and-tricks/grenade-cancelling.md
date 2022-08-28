@@ -4,6 +4,7 @@ tags:
     - grenade
     - throwable
     - tips-and-tricks
+    - double-bind
 ---
 
 # Grenade Cancelling
