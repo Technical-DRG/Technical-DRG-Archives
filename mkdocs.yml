@@ -104,4 +104,7 @@ nav:
     - Weapons and Overclocks:
       - game-mechanics/weapons-overclocks/index.md
       - Bullets of Mercy: game-mechanics/weapons-overclocks/bullets-of-mercy.md
+  - Tips and Tricks:
+    - tips-and-tricks/index.md
+    - Grenade Cancelling: tips-and-tricks/grenade-cancelling.md
   - Tags: tags.md
