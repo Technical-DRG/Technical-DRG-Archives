@@ -30,6 +30,11 @@ theme:
 repo_name: Technical-DRG/Technical-DRG-Archives
 repo_url: https://github.com/Technical-DRG/Technical-DRG-Archives
 
+# We need to override `edit_uri` because our main branch is called `main` not `master`.
+# See <https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=edit#edit-button>.
+# edit/{MAIN_BRANCH_NAME}/docs/
+edit_uri: edit/main/docs/
+
 plugins:
   - search
   - tags:
