@@ -5,11 +5,11 @@ tags:
     - overclock
     - minigun
     - gunner
-    - leadstorm
+    - lead-storm
     - hazard-6x2
 ---
 
-# Build Breakdoown: Bullet Hell (Gunner's Leadstorm Overclock, Modded Hazard 6x2)
+# Build Breakdoown: Bullet Hell (Gunner's Lead Storm Overclock, Modded Hazard 6x2)
 
 | Post Info          |                                                                                                                                                                                |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

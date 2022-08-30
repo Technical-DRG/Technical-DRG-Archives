@@ -5,11 +5,11 @@ tags:
     - gunner
     - build
     - overclock
-    - leadstorm
+    - lead-storm
     - hazard-6x2
 ---
 
-# Build Breakdown: Burning Hell (Gunner's Leadstorm Overclock, Modded Hazard 6x2)
+# Build Breakdown: Burning Hell (Gunner's Lead Storm Overclock, Modded Hazard 6x2)
 
 | Post Info          |                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
