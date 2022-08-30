@@ -28,6 +28,7 @@ contains a **Post Info** section that links back to the original
 
 - [Burning Hell](./burning-hell.md) Overclock.
 - [Bullet Hell](./bullet-hell.md) Overclock.
+- [Lead Storm](./lsls.md) Overclock.
 
 ### "Bulldog" Heavy Revolver
 
