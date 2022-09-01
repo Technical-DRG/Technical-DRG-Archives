@@ -114,4 +114,5 @@ nav:
   - Tips and Tricks:
     - tips-and-tricks/index.md
     - Grenade Cancelling: tips-and-tricks/grenade-cancelling.md
+    - GameUserSettings.ini: tips-and-tricks/gameusersettings.md
   - Tags: tags.md
