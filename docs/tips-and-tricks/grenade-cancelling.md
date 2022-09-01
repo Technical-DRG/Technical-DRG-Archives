@@ -5,6 +5,7 @@ tags:
     - throwable
     - tips-and-tricks
     - double-bind
+    - game-settings-ini
 ---
 
 # Grenade Cancelling
