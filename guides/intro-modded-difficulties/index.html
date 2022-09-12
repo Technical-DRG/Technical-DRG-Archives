@@ -1,0 +1,1629 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/placeholder-favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>An Introduction to Modded Difficulties - Technical DRG Archives</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#an-introduction-to-modded-difficulties" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical DRG Archives" class="md-header__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical DRG Archives
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              An Introduction to Modded Difficulties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../data/" class="md-tabs__link">
+        Data
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../builds/" class="md-tabs__link">
+        Builds
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../breakdowns/" class="md-tabs__link">
+        Breakdowns
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../game-mechanics/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips-and-tricks/" class="md-tabs__link">
+        Tips and Tricks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical DRG Archives" class="md-nav__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    Technical DRG Archives
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../data/">Data</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/gk2-bp-aise-vs-bom/" class="md-nav__link">
+        A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/m1000-classic-breakpoints/" class="md-nav__link">
+        M1000 Classic Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/volatile-bullets-vs-elephant-rounds-breakpoints/" class="md-nav__link">
+        Volatile Bullets and Elephant Rounds Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/lok1-executioner-breakpoints/" class="md-nav__link">
+        LOK-1 Executioner Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Guides</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          An Introduction to Modded Difficulties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        An Introduction to Modded Difficulties
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-difficulty-mods" class="md-nav__link">
+    Why Difficulty Mods?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-difficulty-mods" class="md-nav__link">
+    How to Use Difficulty Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Use Difficulty Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-enemy-count-modifier" class="md-nav__link">
+    The Enemy Count Modifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enemy-cap" class="md-nav__link">
+    Enemy Cap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-difficulty-mods" class="md-nav__link">
+    Common Difficulty Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Difficulty Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starship-troopers-starship-troopers-elite" class="md-nav__link">
+    Starship Troopers / Starship Troopers Elite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-5-with-multipliers" class="md-nav__link">
+    Hazard 5 with Multipliers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-6" class="md-nav__link">
+    Hazard 6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-7" class="md-nav__link">
+    Hazard 7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-6x2" class="md-nav__link">
+    Hazard 6x2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-5x2-spicy-edition" class="md-nav__link">
+    Hazard 5x2 Spicy Edition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-7x15-7x2-6x3-etc" class="md-nav__link">
+    Hazard 7x1.5, 7x2, 6x3, etc.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../builds/">Builds</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Builds" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Builds
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/sticky-fuel/" class="md-nav__link">
+        Sticky Fuel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/burning-hell/" class="md-nav__link">
+        Burning Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/bullet-hell/" class="md-nav__link">
+        Bullet Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/lsls/" class="md-nav__link">
+        Lead Storm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/volatile-bullets/" class="md-nav__link">
+        Volatile Bullets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/m1000/" class="md-nav__link">
+        Multi-Choice M1000 Classic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/stunner/" class="md-nav__link">
+        Stunner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../breakdowns/">Breakdowns</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Breakdowns
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/">Game Mechanics</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/perks/">Perks</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Perks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Perks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/perks/unstoppable/" class="md-nav__link">
+        Unstoppable
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/weapons-overclocks/">Weapons and Overclocks</a>
+          
+            <label for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Weapons and Overclocks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Weapons and Overclocks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/weapons-overclocks/bullets-of-mercy/" class="md-nav__link">
+        Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tips-and-tricks/">Tips and Tricks</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tips and Tricks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips and Tricks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/grenade-cancelling/" class="md-nav__link">
+        Grenade Cancelling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/gameusersettings/" class="md-nav__link">
+        GameUserSettings.ini
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-difficulty-mods" class="md-nav__link">
+    Why Difficulty Mods?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-difficulty-mods" class="md-nav__link">
+    How to Use Difficulty Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Use Difficulty Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-enemy-count-modifier" class="md-nav__link">
+    The Enemy Count Modifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enemy-cap" class="md-nav__link">
+    Enemy Cap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-difficulty-mods" class="md-nav__link">
+    Common Difficulty Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Difficulty Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starship-troopers-starship-troopers-elite" class="md-nav__link">
+    Starship Troopers / Starship Troopers Elite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-5-with-multipliers" class="md-nav__link">
+    Hazard 5 with Multipliers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-6" class="md-nav__link">
+    Hazard 6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-7" class="md-nav__link">
+    Hazard 7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-6x2" class="md-nav__link">
+    Hazard 6x2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-5x2-spicy-edition" class="md-nav__link">
+    Hazard 5x2 Spicy Edition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-7x15-7x2-6x3-etc" class="md-nav__link">
+    Hazard 7x1.5, 7x2, 6x3, etc.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../tags/#modded" class="md-tag">
+          modded
+        </a>
+      
+    
+      
+        <a href="../../tags/#guide" class="md-tag">
+          guide
+        </a>
+      
+    
+  </nav>
+
+
+
+  <a href="https://github.com/Technical-DRG/Technical-DRG-Archives/edit/main/docs/guides/intro-modded-difficulties.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="an-introduction-to-modded-difficulties">An Introduction to Modded Difficulties<a class="headerlink" href="#an-introduction-to-modded-difficulties" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Post Info</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>u/littlebobbytables9</td>
+</tr>
+<tr>
+<td>Post Date</td>
+<td>2022-06-07</td>
+</tr>
+<tr>
+<td>Original Post Link</td>
+<td><a href="https://www.reddit.com/r/technicaldrg/comments/v6l5hf/an_intro_to_modded_difficulties/">An intro to modded difficulties</a></td>
+</tr>
+</tbody>
+</table>
+<p>Since a lot of the posts in here are going to reference difficulty mods, I thought it would be good
+to have a quick overview of the various mods and the effect those have on gameplay.</p>
+<h2 id="why-difficulty-mods">Why Difficulty Mods?<a class="headerlink" href="#why-difficulty-mods" title="Permanent link">&para;</a></h2>
+<p>Haz 5 has an upper limit when it comes to testing skill and builds. Past a certain individual skill
+level solo stops being interesting very quickly unless you attempt increasingly arcane self-imposed
+challenges like random builds, no-mod builds, and the like. You can do an ok job testing individual
+skill in multiplayer by carrying very poor teammates, but finding those teams is inconsistent and
+ultimately it's only a test of your individual skill. Ultimately, there is no way for haz 5 to test
+good teamplay, because a good team will steamroll any vanilla content put in front of them, so we
+have to turn to mods for missions where good teamplay is required.</p>
+<p>Similarly it's also hard to test builds in haz 5. Essentially any build with sufficient individual
+skill is enough to excel and even carry in haz 5, so it's difficult to test comparative statements
+about different builds. You can take builds or even team compositions entirely devoted to either
+single target or AOE with none of the other, and it doesn't have much of an impact on success rate
+simply because neither of those things are required to succeed in haz 5. Worse, even what "good"
+means is warped by the environment- if winning is practically guaranteed no matter what, builds or
+strategies that have high ceilings but require more setup or time end up looking impotent as
+everyone else kills all the enemies before you can execute- in the extremes, a "kill stealing meta"
+where having high kills on the score screen is seen as proof of a good build even if their
+contributions ultimately amounted to nothing, because contributing nothing isn't punished by vanilla
+content.</p>
+<p>So that's where difficulty mods come in, or at least the difficulty mods that we at
+<a href="https://www.reddit.com/r/technicaldrg/">r/technicaldrg</a> are interested in (see the breakdown later
+in the post). They provide an environment that tests both individual skill and also teamplay in
+multiplayer. They provide an environment that makes it very obvious the differences in power level
+between builds. They require balanced compositions with strong single target and AOE. The good ones
+preserve vanilla balance as much as possible. And they're very fun to play.</p>
+<p>What they are not, ideally, is a power fantasy. While combining difficulty mods with other mods that
+buff weapons or make other changes is a perfectly legitimate way to play the game, here we focus on
+preserving the vanilla game as much as possible. All of the changes are there to make the game
+harder, with a few exceptions out of necessity: if you don't increase doretta health and reduce the
+nitra cost of resupplies it makes unfun failstates much too likely, much more likely than in
+vanilla. Doing this keeps balance aligned with vanilla while still making the game much harder/more
+skill testing. Therefore even if you're only interested in haz 5, the posts in this subreddit will
+still be valid.</p>
+<h2 id="how-to-use-difficulty-mods">How to Use Difficulty Mods<a class="headerlink" href="#how-to-use-difficulty-mods" title="Permanent link">&para;</a></h2>
+<p>While there still exist standalone mods for some of these on mod.io, the Custom Difficulty mod has
+basically made them obsolete since it can reproduce any other difficulty mod while also allowing
+fine-grained control of any of the variables, changing difficulties without having to disband the
+lobby, changing resupply cost and enemy cap without additional mods, and many other advantages.</p>
+<p>It can be a bit overwhelming at first, but Custom Difficulty is easy to use if you just copy-paste
+difficulty strings from <a href="https://github.com/trumank/drg-custom-difficulties">this repo</a> which has
+strings for many of the common difficulties like haz 6, 7, and 6x2. If it doesn't have a string for
+your desired difficulty and that difficulty exists as a standalone mod, you can simply enable both
+mods and Custom Difficulty will import the mod allowing you to save it as a new difficulty string.</p>
+<div class="admonition info">
+<p class="admonition-title">Custom Difficulty Presets</p>
+<p>Link: <a href="https://github.com/trumank/drg-custom-difficulties">https://github.com/trumank/drg-custom-difficulties</a></p>
+</div>
+<p>If you'd like to try your hand at modifying an existing difficulty, creating a new difficulty, or
+simply understanding what all these numbers mean, Virryn wrote a great guide to Custom Difficulty
+that you can read
+<a href="https://docs.google.com/document/d/131FqOl0FnwiAslvvDSYkV35oBQXYx2kH0oZYwEpjoBI">here</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Custom Difficulty Guide</p>
+<p>Link: <a href="https://docs.google.com/document/d/131FqOl0FnwiAslvvDSYkV35oBQXYx2kH0oZYwEpjoBI">https://docs.google.com/document/d/131FqOl0FnwiAslvvDSYkV35oBQXYx2kH0oZYwEpjoBI</a></p>
+</div>
+<p>But I'll give special attention to the most important one here:</p>
+<h3 id="the-enemy-count-modifier">The Enemy Count Modifier<a class="headerlink" href="#the-enemy-count-modifier" title="Permanent link">&para;</a></h3>
+<p>The common factor with nearly every difficulty mod is that they all increase the
+<code>EnemyCountModifier</code> field in the hazard file. This variable serves as a multiplier on nearly<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+all spawns in the game so turning it up means more bugs. Doubling it will cause twice the bugs to
+spawn, so if you ever see "5x3" or "6x2" that means taking the base difficulty, in this case haz 5
+or haz 6, and then multiplying <code>EnemyCountModifier</code> by the multiplier.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;EnemyCountModifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="mf">0.85</span><span class="p">,</span><span class="w"> </span><span class="c1">// 1 player scaling</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="mf">0.85</span><span class="p">,</span><span class="w"> </span><span class="c1">// 2 players scaling</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="mf">1.25</span><span class="p">,</span><span class="w"> </span><span class="c1">// 3 players scaling</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="mf">1.5</span><span class="w">   </span><span class="c1">// 4 players scaling</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">],</span><span class="w"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="c1">// ...</span><span class="w"></span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<h3 id="enemy-cap">Enemy Cap<a class="headerlink" href="#enemy-cap" title="Permanent link">&para;</a></h3>
+<p>The game has a limit on the number of enemies on the map at any one time, which by default is 60
+swarmers and 60 enemies. Playing mods that increase the Enemy Count will quickly run into this cap,
+blunting the effect of the increased spawns. Playing even just 5x2 will feel very different with the
+vanilla enemy cap compared to a higher enemy cap, and if you want to play very high modifiers like
+5x6 or 4x20 for the memes, you'll need to raise your cap extremely high. For most difficulties
+people actually play, though, a cap of <code>[90, 120, 180, 180]</code> is going to be sufficient, where the
+array goes from 1 player to 4 players.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;MaxActiveEnemies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="mi">90</span><span class="p">,</span><span class="w">  </span><span class="c1">// 1 player scaling</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="mi">120</span><span class="p">,</span><span class="w"> </span><span class="c1">// 2 players scaling</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="mi">180</span><span class="p">,</span><span class="w"> </span><span class="c1">// 3 players scaling</span><span class="w"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="mi">180</span><span class="w">  </span><span class="c1">// 4 players scaling</span><span class="w"></span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">],</span><span class="w"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="c1">// ...</span><span class="w"></span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<p>Another cap that exists in the game is the enemy aggro cap. By default only 32 enemies can be
+aggroed on a given player at any time, so if you have more than 32 enemies on the map in a solo
+mission (or more than 128 enemies in a 4 player mission) then the other enemies just path around
+randomly until a slot opens up. Unfortunately, there is no way to change this with mods, at least
+not yet, and it means that very high multipliers become more frustrating than difficult, as once you
+fill the map with bugs they'll only come to you at a relatively slow but continuous trickle rather
+than all at once.</p>
+<h2 id="common-difficulty-mods">Common Difficulty Mods<a class="headerlink" href="#common-difficulty-mods" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">A Path to Hazard 6x2</p>
+<p>For people who have never played modded difficulties or are new to modded difficulties, a
+reasonable progression from Hazard 5 to harder difficulties (e.g. Hazard 6x2) is to play
+the following chain of difficulties, becoming more comfortable in each before progressing to
+the next difficulty:</p>
+<p><span class="arithmatex">\( \text{Hazard 6} \to \text{Hazard 5x2} \to \text{Hazard 6x1.5} \to \text{Hazard 6x2} \)</span></p>
+<ul>
+<li>Hazard 6 lets you become more familiar with increased enemy movement speed, more disruptive
+  enemies, increased attack damage, and other stats that are changed from Hazard 5.</li>
+<li>Hazard 5x2 lets you become more familiar with larger swarm sizes.</li>
+<li>Hazard 6x1.5 is harder than Hazard 6, but still not as hard as Hazard 6x2, letting you become
+  more familiar with larger Hazard 6 swarms.</li>
+<li>And finally is Hazard 6x2.</li>
+</ul>
+</div>
+<h3 id="starship-troopers-starship-troopers-elite">Starship Troopers / Starship Troopers Elite<a class="headerlink" href="#starship-troopers-starship-troopers-elite" title="Permanent link">&para;</a></h3>
+<p>The most common difficulty mod by far, starship troopers is equivalent to haz 4 with a x2 modifier
+and <abbr title="Starship Trooper Elite">STE</abbr> a x3 modifier. Haz 4 movement speed means that being able to kite is basically a cheat code
+and in combo with halfway reasonable AOE removes much of the difficulty.</p>
+<h3 id="hazard-5-with-multipliers">Hazard 5 with Multipliers<a class="headerlink" href="#hazard-5-with-multipliers" title="Permanent link">&para;</a></h3>
+<p>The second most popular difficulty mod, most people play 5x2 with some 5x3 and the occasional 5xtoo
+much lobby. Many people view these as just AOE fests, which is mostly true. While increasing the
+enemy count modifier does lead to more bugs, making AOE better, it does also increases the number of
+menaces, mactera, praetorians, etc. so there is also an increase in the value of or need for single
+target damage. But haz 5 speed and damage means these difficulties are still pretty forgiving, so
+they can be a good intro to modded difficulties.</p>
+<h3 id="hazard-6">Hazard 6<a class="headerlink" href="#hazard-6" title="Permanent link">&para;</a></h3>
+<p>Finally the good stuff. A longer explanation from Ike himself is here, but the general idea is that
+Haz 6 started with a straightforward extrapolation from the jump from haz 4 to 5, and then was
+adjusted with the goal of making a fun higher difficulty that preserved the base game balance as
+much as possible. Note that some of the information in that document about what various difficulty
+fields do is wrong, refer to virryn's document to be safe.</p>
+<p>Enemy speed and damage is increased in haz 6, making kiting less effective (though still obviously
+useful) and punishing poor movement or being out of position. Large enemy health increases, and
+higher Enemy Diversity means a larger portion of the swarm is the more interesting enemies rather
+than just grunts. Stationary enemy spawn rates are kicked way up, much higher than a straight
+extrapolation, which makes different mission types feel very unique and further increases the value
+of single target damage.</p>
+<p>Overall ike did a good job making single target damage just as necessary as AOE clear. It's arguably
+more valuable, since you'll usually want at least 2 single target focused teammates while generally
+only needing 1 focused on AOE, though that's more a product of how each functions- twice as many
+grunts requires barely any more AOE to deal with, while twice as many menaces will require twice as
+much single target.</p>
+<p>This is the difficulty I would most recommend to people starting to get bored with haz 5.</p>
+<h3 id="hazard-7">Hazard 7<a class="headerlink" href="#hazard-7" title="Permanent link">&para;</a></h3>
+<p>7 is pretty much just more of 6. Even higher enemy speed and projectile speed makes it very
+punishing, especially with higher enemy damage on top. Very difficult and very much a test of
+individual skill- it's easy to die to haz 7 bullshit if you aren't 100% paying attention (and
+sometimes when you are lol). Slows, like that from sticky flames, become less effective since base
+move speed is so high, so to actually hold a position with sticky requires more lines or additional
+CC on top. Single target damage is arguably more important than AOE since there are so many special
+and disruptive enemies.</p>
+<h3 id="hazard-6x2">Hazard 6x2<a class="headerlink" href="#hazard-6x2" title="Permanent link">&para;</a></h3>
+<p>Haz 6 with a x2 multiplier. This is the hardest difficulty that is commonly played. Compared to haz
+7 it has more but more forgiving enemies. Compared to 5x2 there is a much higher need for single
+target damage because of the swarm composition changes and the increase to stationary difficulty and
+enemy health, making it very balanced. In contrast to 7 it's more a test of team composition and
+synergy rather than individual skill (as much). Working effectively with your team and mastering
+group movement through the cave is very important.</p>
+<h3 id="hazard-5x2-spicy-edition">Hazard 5x2 Spicy Edition<a class="headerlink" href="#hazard-5x2-spicy-edition" title="Permanent link">&para;</a></h3>
+<p>This one is new and actively updated, but aims to be a middle ground between 5x2 and 6x2 to aid in
+that adjustment (or allow more experienced players to play a similar difficulty with more room for
+not tryharding). Several variants exist at various points on the spectrum from 5x2 and 6x2.</p>
+<h3 id="hazard-7x15-7x2-6x3-etc">Hazard 7x1.5, 7x2, 6x3, etc.<a class="headerlink" href="#hazard-7x15-7x2-6x3-etc" title="Permanent link">&para;</a></h3>
+<p>Steps up from 6x2, these difficulties are rarely played and require a solid team. 7x1.5 is the most
+comparable, generally being more punishing to mistakes but having a slightly smaller number of
+enemies compared to 6x2. If you're playing these you probably didn't need to read this post lol.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Excludes regular brood nexus swarmer spawns, swarmer egg spawns, rival enemies, and dreads.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-09-12 18:59:58</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Guides" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Guides
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../builds/" class="md-footer__link md-footer__link--next" aria-label="Next: Builds" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Builds
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

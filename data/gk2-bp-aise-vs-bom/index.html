@@ -1,0 +1,1593 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/placeholder-favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy - Technical DRG Archives</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-look-at-gk2-breakpoints-with-ai-stability-engine-and-bullets-of-mercy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical DRG Archives" class="md-header__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical DRG Archives
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Data
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guides/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../builds/" class="md-tabs__link">
+        Builds
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../breakdowns/" class="md-tabs__link">
+        Breakdowns
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../game-mechanics/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips-and-tricks/" class="md-tabs__link">
+        Tips and Tricks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical DRG Archives" class="md-nav__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    Technical DRG Archives
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Data</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy" class="md-nav__link">
+    Accuracy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m1000-classic-breakpoints/" class="md-nav__link">
+        M1000 Classic Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volatile-bullets-vs-elephant-rounds-breakpoints/" class="md-nav__link">
+        Volatile Bullets and Elephant Rounds Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lok1-executioner-breakpoints/" class="md-nav__link">
+        LOK-1 Executioner Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../guides/">Guides</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/intro-modded-difficulties/" class="md-nav__link">
+        An Introduction to Modded Difficulties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../builds/">Builds</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Builds" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Builds
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/sticky-fuel/" class="md-nav__link">
+        Sticky Fuel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/burning-hell/" class="md-nav__link">
+        Burning Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/bullet-hell/" class="md-nav__link">
+        Bullet Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/lsls/" class="md-nav__link">
+        Lead Storm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/volatile-bullets/" class="md-nav__link">
+        Volatile Bullets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/m1000/" class="md-nav__link">
+        Multi-Choice M1000 Classic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builds/stunner/" class="md-nav__link">
+        Stunner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../breakdowns/">Breakdowns</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Breakdowns
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/">Game Mechanics</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/perks/">Perks</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Perks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Perks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/perks/unstoppable/" class="md-nav__link">
+        Unstoppable
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/weapons-overclocks/">Weapons and Overclocks</a>
+          
+            <label for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Weapons and Overclocks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Weapons and Overclocks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/weapons-overclocks/bullets-of-mercy/" class="md-nav__link">
+        Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tips-and-tricks/">Tips and Tricks</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tips and Tricks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips and Tricks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/grenade-cancelling/" class="md-nav__link">
+        Grenade Cancelling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/gameusersettings/" class="md-nav__link">
+        GameUserSettings.ini
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy" class="md-nav__link">
+    Accuracy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../tags/#data" class="md-tag">
+          data
+        </a>
+      
+    
+      
+        <a href="../../tags/#breakpoints" class="md-tag">
+          breakpoints
+        </a>
+      
+    
+      
+        <a href="../../tags/#gk2" class="md-tag">
+          gk2
+        </a>
+      
+    
+      
+        <a href="../../tags/#scout" class="md-tag">
+          scout
+        </a>
+      
+    
+      
+        <a href="../../tags/#ai-stability-engine" class="md-tag">
+          ai-stability-engine
+        </a>
+      
+    
+      
+        <a href="../../tags/#bullets-of-mercy" class="md-tag">
+          bullets-of-mercy
+        </a>
+      
+    
+      
+        <a href="../../tags/#overclock" class="md-tag">
+          overclock
+        </a>
+      
+    
+      
+        <a href="../../tags/#hazard-6" class="md-tag">
+          hazard-6
+        </a>
+      
+    
+      
+        <a href="../../tags/#hazard-6x2" class="md-tag">
+          hazard-6x2
+        </a>
+      
+    
+  </nav>
+
+
+
+  <a href="https://github.com/Technical-DRG/Technical-DRG-Archives/edit/main/docs/data/gk2-bp-aise-vs-bom.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="a-look-at-gk2-breakpoints-with-ai-stability-engine-and-bullets-of-mercy">A Look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy<a class="headerlink" href="#a-look-at-gk2-breakpoints-with-ai-stability-engine-and-bullets-of-mercy" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Post Info</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>u/littlebobbytables9</td>
+</tr>
+<tr>
+<td>Post Date</td>
+<td>2022-05-29</td>
+</tr>
+<tr>
+<td>Original Post Link</td>
+<td><a href="https://www.reddit.com/r/technicaldrg/comments/uzy9ua/a_look_at_gk2_breakpoints_with_aise_and_bom/">A look at gk2 breakpoints with <abbr title="AI Stability Engine">AISE</abbr> and <abbr title="Bullets of Mercy">BoM</abbr></a></td>
+</tr>
+</tbody>
+</table>
+<p>These two OCs are largely considered the only two worth using for the gk2, but some people put <abbr title="AI Stability Engine">AISE</abbr>
+up on the same level as <abbr title="Bullets of Mercy">BoM</abbr> while others do not and I wanted to explore the question quantitatively.</p>
+<p>First off, there are some areas where <abbr title="Bullets of Mercy">BoM</abbr> has a clear advantage. White phosphorus makes igniting big
+enemies very easy, so you should really never miss out on the 33% damage against praetorians,
+wardens, menaces, goo bombers, spitballers, breeders, grabbers, etc. And when you have the extra
+damage, <abbr title="Bullets of Mercy">BoM</abbr> is going to do around 15% more DPS assuming all weakpoint hits (I'll address accuracy
+near the end). Oppressors don't stay on fire very long, but if you have IFGs it's easy to activate
+and even if you don't they're not an especially important enemy anyway.</p>
+<p>Where it really comes into question is smaller enemies where it's not worth the effort to ignite
+first and then switch weapons- a lot of these are going to die to the boomstick anyway, and if they
+don't it's a pretty time- and ammo-inefficient method of killing them. Most of these-
+mactera/trijwas and acid/web spitters, are also the targets that best fit under the general scout
+role in combat and are also very dangerous, so killing them quickly is important. You'd expect <abbr title="AI Stability Engine">AISE</abbr>
+to do better here, but it's actually a bit more complicated. The reason is that t5 stun lets the <abbr title="Bullets of Mercy">BoM</abbr>
+player proc the extra damage just from shooting weakpoints, albeit probabilistically.</p>
+<p><img align="left," alt="AISE Advantage as a Percent of Damage, Cumulative" loading="lazy" src="evXDEbH.png" /></p>
+<p>I made this graph to show the percent difference in cumulative damage compared to <abbr title="Bullets of Mercy">BoM</abbr> as the number
+of shots against a target weakpoint increases. For the first shot <abbr title="AI Stability Engine">AISE</abbr> has a clear advantage doing
+14% more damage, but since just the 3rd <abbr title="Bullets of Mercy">BoM</abbr> shot already has a higher expected value than the 3rd
+<abbr title="AI Stability Engine">AISE</abbr> shot, that deficit from the first two shots is basically gone by the 4th shot and past that <abbr title="Bullets of Mercy">BoM</abbr>
+is doing more cumulative damage.</p>
+<p>The data in the graph is reproduced below, going up to 11 shots because the 12th shot may hit when
+stun has worn off, making things more complicated.</p>
+<table>
+<thead>
+<tr>
+<th>Number of Shots</th>
+<th><abbr title="Bullets of Mercy">BoM</abbr></th>
+<th><abbr title="AI Stability Engine">AISE</abbr></th>
+<th><abbr title="Bullets of Mercy">BoM</abbr> Cumulative</th>
+<th><abbr title="AI Stability Engine">AISE</abbr> Cumulative</th>
+<th>Percent Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>23.4</td>
+<td>27.2</td>
+<td>23.4</td>
+<td>27.2</td>
+<td>13.97</td>
+</tr>
+<tr>
+<td>2</td>
+<td>26.4888</td>
+<td>27.2</td>
+<td>49.8888</td>
+<td>54.4</td>
+<td>8.29</td>
+</tr>
+<tr>
+<td>3</td>
+<td>28.34208</td>
+<td>27.2</td>
+<td>78.23088</td>
+<td>81.6</td>
+<td>4.12</td>
+</tr>
+<tr>
+<td>4</td>
+<td>29.454048</td>
+<td>27.2</td>
+<td>107.684928</td>
+<td>108.8</td>
+<td>1.02</td>
+</tr>
+<tr>
+<td>5</td>
+<td>30.1212288</td>
+<td>27.2</td>
+<td>137.8061568</td>
+<td>136</td>
+<td>-1.33</td>
+</tr>
+<tr>
+<td>6</td>
+<td>30.52153728</td>
+<td>27.2</td>
+<td>168.3276941</td>
+<td>163.2</td>
+<td>-3.1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>30.76172237</td>
+<td>27.2</td>
+<td>199.0894164</td>
+<td>190.4</td>
+<td>-4.6</td>
+</tr>
+<tr>
+<td>8</td>
+<td>30.90583342</td>
+<td>27.2</td>
+<td>229.9952499</td>
+<td>217.6</td>
+<td>-6</td>
+</tr>
+<tr>
+<td>9</td>
+<td>30.99230005</td>
+<td>27.2</td>
+<td>260.9875499</td>
+<td>244.8</td>
+<td>-6.6</td>
+</tr>
+<tr>
+<td>10</td>
+<td>31.04418003</td>
+<td>27.2</td>
+<td>292.03173</td>
+<td>272</td>
+<td>-7.4</td>
+</tr>
+<tr>
+<td>11</td>
+<td>31.07530802</td>
+<td>27.2</td>
+<td>323.107038</td>
+<td>299.2</td>
+<td>-8</td>
+</tr>
+</tbody>
+</table>
+<p>So what does this mean? Against enemies with an adjusted health-after-weakpoint-modifier of ~100 or
+more (this includes already hurt larger enemies), <abbr title="Bullets of Mercy">BoM</abbr> actually catches back up. Let's look at some
+specific enemies, again assuming no activators other than stun, and examine the breakpoints assuming
+weakpoint shots (or body shots for enemies where I don't think you can get wp shots consistently,
+but those are noted). This also assumes weakpoint damage and both damage upgrades, my preferred
+build for both, and uses haz 5 health numbers. Haz 6/7 health scaling will affect the large enemies,
+but those are ones for which breakpoints are less relevant, and will also generally favor <abbr title="Bullets of Mercy">BoM</abbr>
+because longer strings of hits will benefit much more from stun.</p>
+<table>
+<thead>
+<tr>
+<th>Enemy</th>
+<th><abbr title="AI Stability Engine">AISE</abbr></th>
+<th><abbr title="Bullets of Mercy">BoM</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mactera spawn</td>
+<td>3 shots</td>
+<td>74% chance of 3 shots, 26% chance of 4 shots</td>
+</tr>
+<tr>
+<td>tri-jaw</td>
+<td>6 shots</td>
+<td>74% chance of 5 shots, 26% chance of 6 shots</td>
+</tr>
+<tr>
+<td>brundle</td>
+<td>6 shots to break the armor, 9 more wp shots to kill</td>
+<td>5 shots to break the armor, 40% chance of 8 shots to kill, 52.2% chance of 9 shots to kill, 7.8% chance of 10 shots to kill</td>
+</tr>
+<tr>
+<td>web spitter</td>
+<td>1 shot (wp) 3 shots (body)</td>
+<td>2 shots (wp) 3 shots (body)</td>
+</tr>
+<tr>
+<td>acid spitter</td>
+<td>3 shots (wp) 9 shots (body)</td>
+<td>74% chance of 3 shots (wp) 26% chance of 4 shots (wp) 8 shots (body)</td>
+</tr>
+<tr>
+<td>shellback</td>
+<td>13 shots</td>
+<td>15 shots (can't be stunned)</td>
+</tr>
+<tr>
+<td>goo bomber</td>
+<td>6 shots to break the sacs, 51 to finish it off</td>
+<td>6 shots to break the sacs, ~46 to finish it off</td>
+</tr>
+<tr>
+<td>grabber</td>
+<td>10 shots</td>
+<td>11 shots (can't be stunned)</td>
+</tr>
+<tr>
+<td>grunt</td>
+<td>2 shots</td>
+<td>3 shots</td>
+</tr>
+<tr>
+<td>slasher</td>
+<td>4 shots</td>
+<td>4 shots</td>
+</tr>
+<tr>
+<td>guard</td>
+<td>6 shots</td>
+<td>64% chance of 6 shots, 36% chance of 7 shots</td>
+</tr>
+<tr>
+<td>oppressor</td>
+<td>50 shots</td>
+<td>58 shots (can't be stunned)</td>
+</tr>
+<tr>
+<td>swarmer</td>
+<td>2 shots</td>
+<td>1 shot</td>
+</tr>
+<tr>
+<td>naedocyte</td>
+<td>1 shot</td>
+<td>1 shot</td>
+</tr>
+<tr>
+<td>exploder</td>
+<td>1 shot</td>
+<td>1 shot</td>
+</tr>
+<tr>
+<td>menace</td>
+<td>20 shots</td>
+<td>78.4% chance of 18 shots, 19.9% chance of 19 shots, 1.7% chance of 20 shots</td>
+</tr>
+</tbody>
+</table>
+<p>The menace should be taken with a grain of salt, as they burrow once they become unstunned requiring
+you to restun a second time. However, it's arguable that stun on a menace is more than valuable
+enough to make up for this. I also included a lot of enemies that you really should probably be
+igniting just for completeness' sake, though I also didn't include praetorians because they survive
+long enough for it to matter if the stun duration runs out, and there's a cooldown on reactivating
+it... it's a mess, but overall will still come out in <abbr title="Bullets of Mercy">BoM</abbr>'s favor even just relying on stun,
+especially if you pause shooting during the stun cooldown.</p>
+<p>So based on these breakpoints it looks like <abbr title="Bullets of Mercy">BoM</abbr> doesn't suffer that much. 1/4 of the time mactera
+spawn take an extra hit which is annoying, but trijaws take 1 fewer hit 3/4 of the time and are
+definitely the more dangerous of the two so there it's at least a wash. Both spitter types tend to
+show up in positions that make it very hard or impossible to hit their weakpoints, so imo <abbr title="Bullets of Mercy">BoM</abbr> comes
+out ahead there. Some enemies have stun immunity, but they're also enemies that it's worth getting a
+status effect on so I don't think that has a big effect in game. So in terms of high value target
+elimination and assuming all weakpoint hits, <abbr title="Bullets of Mercy">BoM</abbr> generally comes out ahead which may be unintuitive.</p>
+<h2 id="accuracy">Accuracy<a class="headerlink" href="#accuracy" title="Permanent link">&para;</a></h2>
+<p>But <abbr title="AI Stability Engine">AISE</abbr> doesn't just increase the weakpoint modifier, it also eliminates recoil and increases
+spread recovery. Theoretically that could mean a higher percentage of weakpoint hits, and therefore
+more effectiveness against enemies with hard to hit weakpoints. But how important is it? If we first
+look at base gk2 with rate of fire holding down m1, we can see that there's a <a href="https://www.youtube.com/watch?v=2Rr34Iel7AU">significant increase
+in spread very quickly</a>, and when we compare to <a href="https://www.youtube.com/watch?v=hmnoYDq7qdw"><abbr title="AI Stability Engine">AISE</abbr>
+with ROF</a> it's clear that <abbr title="AI Stability Engine">AISE</abbr> is much more accurate.
+But now let's talk gyro stabilization. <a href="https://www.youtube.com/watch?v=pGuvZ_HMaGI"><abbr title="Bullets of Mercy">BoM</abbr> with gyro
+stabilization</a> actually has less spread than <abbr title="AI Stability Engine">AISE</abbr> until
+about 8 bullets in, though holding down m1 still has us getting out of hand by the end. But what if
+we fire in short bursts to stay in that accurate regime (and do some manual recoil compensation)? We
+can be <a href="https://www.youtube.com/watch?v=kdGlgZIC3mI&amp;feature=youtu.be">very accurate</a>, limited
+primarily by your ability to compensate for recoil rather than the spread of the weapon. And keep in
+mind that these tests are on a static target while not moving- in actual play the most significant
+factor is your own aim, after all even with infinitely accurate m1k focus shots I still miss
+weakpoints all the time, so once you get used to compensating for recoil the accuracy advantage from
+<abbr title="AI Stability Engine">AISE</abbr> disappears.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p><abbr title="Bullets of Mercy">BoM</abbr> is significantly better against large targets because igniting them or dropping an IFG on them
+is practically what you were going to do anyway. Both do roughly evenly against targets with no
+status effects at all, though it does depend on the specific target. Both have roughly even
+accuracy, though <abbr title="Bullets of Mercy">BoM</abbr> definitely has a higher skill floor since if you can't compensate for recoil
+your shots will go all over the place, and you need to resist the urge to hold down m1 unless you're
+point blanking. <abbr title="Bullets of Mercy">BoM</abbr> also does better if (or rather, when) you miss the weakpoint.</p>
+<p><abbr title="AI Stability Engine">AISE</abbr> does 2 shot grunts and consistently 3 shots mactera spawn, which its main advantage besides
+being much easier to use. It's also generally better against dreads if you don't have a teammate
+consistently adding statuses, since you can't ignite and they don't tend to stay in IFGs very long.</p>
+<p>Of course this is mostly white-room optimization. While it does line up with my and others'
+experience, it doesn't conclusively prove that <abbr title="Bullets of Mercy">BoM</abbr> is the better OC. Have you had other experiences,
+or disagree with my reasoning somewhere? Feel free to start a discussion in the comments.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-09-12 18:59:58</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Data
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../m1000-classic-breakpoints/" class="md-footer__link md-footer__link--next" aria-label="Next: M1000 Classic Breakpoints" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              M1000 Classic Breakpoints
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

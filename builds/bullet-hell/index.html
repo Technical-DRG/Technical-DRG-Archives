@@ -1,0 +1,1822 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/placeholder-favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>Bullet Hell - Technical DRG Archives</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-breakdoown-bullet-hell-gunners-lead-storm-overclock-modded-hazard-6x2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical DRG Archives" class="md-header__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical DRG Archives
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bullet Hell
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../data/" class="md-tabs__link">
+        Data
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guides/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Builds
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../breakdowns/" class="md-tabs__link">
+        Breakdowns
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../game-mechanics/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips-and-tricks/" class="md-tabs__link">
+        Tips and Tricks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical DRG Archives" class="md-nav__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    Technical DRG Archives
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../data/">Data</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/gk2-bp-aise-vs-bom/" class="md-nav__link">
+        A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/m1000-classic-breakpoints/" class="md-nav__link">
+        M1000 Classic Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/volatile-bullets-vs-elephant-rounds-breakpoints/" class="md-nav__link">
+        Volatile Bullets and Elephant Rounds Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/lok1-executioner-breakpoints/" class="md-nav__link">
+        LOK-1 Executioner Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../guides/">Guides</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/intro-modded-difficulties/" class="md-nav__link">
+        An Introduction to Modded Difficulties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Builds</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Builds" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Builds
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sticky-fuel/" class="md-nav__link">
+        Sticky Fuel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../burning-hell/" class="md-nav__link">
+        Burning Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bullet Hell
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bullet Hell
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-bullet-hell" class="md-nav__link">
+    Why Bullet Hell?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1" class="md-nav__link">
+    Tier 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2" class="md-nav__link">
+    Tier 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3" class="md-nav__link">
+    Tier 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4" class="md-nav__link">
+    Tier 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5" class="md-nav__link">
+    Tier 5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-the-two-options" class="md-nav__link">
+    Summary of the Two Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secondary-and-grenades" class="md-nav__link">
+    Secondary and Grenades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playstyle-and-tips" class="md-nav__link">
+    Playstyle and Tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vods" class="md-nav__link">
+    VODs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isnt-it-just-the-base-auto-cannon-but-worse" class="md-nav__link">
+    Isn't it just the base auto cannon but worse?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsls/" class="md-nav__link">
+        Lead Storm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volatile-bullets/" class="md-nav__link">
+        Volatile Bullets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m1000/" class="md-nav__link">
+        Multi-Choice M1000 Classic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stunner/" class="md-nav__link">
+        Stunner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../breakdowns/">Breakdowns</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Breakdowns
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/">Game Mechanics</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/perks/">Perks</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Perks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Perks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/perks/unstoppable/" class="md-nav__link">
+        Unstoppable
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/weapons-overclocks/">Weapons and Overclocks</a>
+          
+            <label for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Weapons and Overclocks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Weapons and Overclocks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/weapons-overclocks/bullets-of-mercy/" class="md-nav__link">
+        Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tips-and-tricks/">Tips and Tricks</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tips and Tricks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips and Tricks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/grenade-cancelling/" class="md-nav__link">
+        Grenade Cancelling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/gameusersettings/" class="md-nav__link">
+        GameUserSettings.ini
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-bullet-hell" class="md-nav__link">
+    Why Bullet Hell?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1" class="md-nav__link">
+    Tier 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2" class="md-nav__link">
+    Tier 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3" class="md-nav__link">
+    Tier 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4" class="md-nav__link">
+    Tier 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5" class="md-nav__link">
+    Tier 5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-the-two-options" class="md-nav__link">
+    Summary of the Two Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secondary-and-grenades" class="md-nav__link">
+    Secondary and Grenades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playstyle-and-tips" class="md-nav__link">
+    Playstyle and Tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vods" class="md-nav__link">
+    VODs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isnt-it-just-the-base-auto-cannon-but-worse" class="md-nav__link">
+    Isn't it just the base auto cannon but worse?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../tags/#bullet-hell" class="md-tag">
+          bullet-hell
+        </a>
+      
+    
+      
+        <a href="../../tags/#build" class="md-tag">
+          build
+        </a>
+      
+    
+      
+        <a href="../../tags/#overclock" class="md-tag">
+          overclock
+        </a>
+      
+    
+      
+        <a href="../../tags/#minigun" class="md-tag">
+          minigun
+        </a>
+      
+    
+      
+        <a href="../../tags/#gunner" class="md-tag">
+          gunner
+        </a>
+      
+    
+      
+        <a href="../../tags/#lead-storm" class="md-tag">
+          lead-storm
+        </a>
+      
+    
+      
+        <a href="../../tags/#hazard-6x2" class="md-tag">
+          hazard-6x2
+        </a>
+      
+    
+  </nav>
+
+
+
+  <a href="https://github.com/Technical-DRG/Technical-DRG-Archives/edit/main/docs/builds/bullet-hell.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="build-breakdoown-bullet-hell-gunners-lead-storm-overclock-modded-hazard-6x2">Build Breakdoown: Bullet Hell (Gunner's Lead Storm Overclock, Modded Hazard 6x2)<a class="headerlink" href="#build-breakdoown-bullet-hell-gunners-lead-storm-overclock-modded-hazard-6x2" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Post Info</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>u/Shotgun-Crocodile</td>
+</tr>
+<tr>
+<td>Post Date</td>
+<td>2022-07-26</td>
+</tr>
+<tr>
+<td>Original Post Link</td>
+<td><a href="https://www.reddit.com/r/technicaldrg/comments/w8aqhs/build_breakdown_bullet_hell_gunners_lead_storm/">BUILD BREAKDOWN: Bullet Hell (Gunner's Lead Storm) [MODDED: Haz6x2]</a></td>
+</tr>
+</tbody>
+</table>
+<p>Bullet hell is probably one of the most widely disparaged overclocks in the game. It's often
+compared unfavorably to the base auto cannon, and simply dismissed as useless. In this build
+breakdown I will be showing why this is an unfair comparison, and why for me bullet hell ranks as in
+the top 5 overclocks for gunner primaries.</p>
+<h2 id="why-bullet-hell">Why Bullet Hell?<a class="headerlink" href="#why-bullet-hell" title="Permanent link">&para;</a></h2>
+<p>Bullet hell on the surface looks like an absolutely terrible overclock. It removes a TON of base
+damage from your bullets, and adds a probability based ricochet for one additional target to your
+bullet. It also comes with the largest accuracy penalty of any overclock. Base bullet hell with no
+other mods selected is basically unusable. Bullet hell trades direct single target damage for
+utility. It is up to the player to make the most of that utility to outweigh the downsides of the
+OC. This is why I personally find bullet hell the most fun OC to play, it gives a lot of outlets for
+creative play, and rewards you for coming up with interesting ways to use it.</p>
+<div class="admonition info">
+<p class="admonition-title">TL;DR</p>
+<ul>
+<li>Offense <strong>Hot bullets</strong> build: <strong>322X3</strong></li>
+<li>Defensive <strong>Aggressive Venting</strong> build: <strong>322X1</strong></li>
+</ul>
+</div>
+<h2 id="tier-1">Tier 1<a class="headerlink" href="#tier-1" title="Permanent link">&para;</a></h2>
+<p>This first option is an extreme no brainer. Bullet hell has such an absurd accuracy penalty that you
+need to pick option 3 <strong>Improved Platform Stability</strong> in order to get back to a weapon that somewhat
+feels like a minigun and not the end of a sparkler. The other options are not even worth discussing.</p>
+<div class="admonition info">
+<p class="admonition-title">Verdict</p>
+<p>Pick <strong>T1C Improved Platform Stability</strong>.</p>
+</div>
+<h2 id="tier-2">Tier 2<a class="headerlink" href="#tier-2" title="Permanent link">&para;</a></h2>
+<p>Normally a personal choice tier. I would argue that on Bullet Hell you lose that choice and you have
+to take <strong>High Velocity Rounds</strong> +2 damage to help offset the massive -3 damage from bullet hell.
+Looking this mod as a percentage. Taking bullet hell lowers your damage by -3, which brings the base
+gun down from 10 to 7. You can now either take 600 ammo bumping your total ammo pool from 2400 to
+3000 (25%). Or you can take +2 damage and bring your damage from 7 to 9 (~29%). More importantly is
+breakpoints. With the ammo mod your breakpoints are going to suffer immensely. You are going to hit
+more armor since you are breaking it less often, and get more reduced damage shots on your already
+lower damage bullets. I did some tests on common ricochet targets below to show the breakpoints
+(median of three tests):</p>
+<table>
+<thead>
+<tr>
+<th>Enemy</th>
+<th>T2A More Ammo</th>
+<th>T2B High Velocity Rounds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swarmer</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Grunt</td>
+<td>17-20</td>
+<td>13-15</td>
+</tr>
+<tr>
+<td>Slasher</td>
+<td>30</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Guard</td>
+<td>54</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Acid Spitter</td>
+<td>22</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Web Spitter</td>
+<td>8</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>As you should be able to see, by taking damage you are saving roughly 20%-33% ammo, which means by
+taking the damage mod not only can you kill things much faster, spending less time on each enemy,
+but you save more ammo too. There is 0 reason to take the ammo mod with bullet hell.</p>
+<div class="admonition info">
+<p class="admonition-title">Verdict</p>
+<p>Pick <strong>T2B High Velocity Rounds</strong>.</p>
+</div>
+<h2 id="tier-3">Tier 3<a class="headerlink" href="#tier-3" title="Permanent link">&para;</a></h2>
+<p>This is where most people make their first huge mistake and go for <em>Blowthrough Rounds</em>. Usually
+this is a good choice on almost any build. However damage per bullet is not the draw of Bullet Hell,
+so making your bullets potentially hit one more target in a straight line is a very meager benefit.</p>
+<p>The strength of bullet hell is that you have more bullets per bullet... so this means you get extra
+proc chances and status effect spread (stun, armor break, hot bullets) on each shot.</p>
+<p><strong>Improved Stun</strong> is the pick on this tier, that basically makes the entire overclock worthwhile.
+The stun duration triples, and you will be dishing out enough stuns to stunlock about 20 enemies at
+the same time. Another hidden benefit of this mod is that it keeps enemies off your back just enough
+that you have more time than usual to let the gun cool while kiting. Since you do not have the
+luxury of cooling on tier 1, stun helps you manage your heat level much more effectively.</p>
+<p><strong>Hardened Rounds</strong> is an OK choice for non-modded game play if you want to play with bullet hell on
+hazard 5. If you find yourself not being overwhelmed by enemies too often, you can swap from stun to
+armor break to increase your damage. Since you cannot control where the bullets hit enemies,
+ensuring that they can reliably break armor increases your overall damage significantly.</p>
+<div class="admonition info">
+<p class="admonition-title">Verdict</p>
+<p>Pick <strong>T3B Improved Stun</strong>.</p>
+</div>
+<h2 id="tier-4">Tier 4<a class="headerlink" href="#tier-4" title="Permanent link">&para;</a></h2>
+<p>This tier offers the first real choice, which depends on your personal preference.</p>
+<ul>
+<li><strong>Variable Chamber Pressure</strong> is a good option to help bring your damage up. With this and damage
+on t2, you actually dish out quite a bit of total <abbr title="Damage Per Second">DPS</abbr> counting both the main bullet and the bounced
+bullet. Assuming 90% player accuracy, and ignoring the tier 1 rate of fire mod it's the build with
+the 5th most <abbr title="Damage Per Second">DPS</abbr> you can get on the minigun.</li>
+<li><strong>Lighter Barrel Assembly</strong> is another great option. This lowers your reaction time required to
+start stunning things which makes it better at dealing with getting overrun. Another good reason to
+run this mod is if you frequently find yourself needing to cool enough that the gun starts spinning
+down. Since the gun cools slower the hotter it is, if you get to the very top of the heat meter
+before letting it cool, the gun will spin down before you should start firing again.</li>
+<li><strong>Magnetic Bearings</strong> is entirely useless. There is 0 reason to ever pick it.</li>
+</ul>
+<p>Personally I take <strong>Variable Chamber Pressure</strong>. All of the issues that Lighter Barrel Assembly fix
+can also be fixed by improving your skills. Don't heat your gun past 85%, if it does you need to
+work on your kiting and situational awareness. Prespinning your gun when you expect to get into a
+fight is sufficient 99% of the time.</p>
+<div class="admonition info">
+<p class="admonition-title">Verdict</p>
+<p>Pick <strong>T4A Variable Chamber Pressure</strong>.</p>
+</div>
+<h2 id="tier-5">Tier 5<a class="headerlink" href="#tier-5" title="Permanent link">&para;</a></h2>
+<p>This is where the choice in playstyle comes in. You can opt to play <em>defensive</em>, brawling, <em>closer
+range</em> with aggressive venting. Or a more <em>long range</em>, <em>offensive</em> style with hot bullets.</p>
+<ul>
+<li><strong>Aggressive Venting</strong> is extremely powerful with bullet hell. Bullet hell and stun keep enemies
+piling up near you as they swarm in without quite killing them. You often need to flick around to
+hit things directly that are not getting stunned, making it difficult to finish off targets. This
+pairs perfectly with aggressive venting, making a dense pile of damaged enemies nearby to hit with
+the vent. The vent will wipe out everything smaller than a guard and clear out a ton of space for
+you to reposition. Aggressive venting also helps mitigate another of bullet hell's weaknesses: being
+ammo starved. If vent connects with a big swarm it can do massive damage, if the fleeing / burning
+bugs retreat into a choke point, fire can spread to additional bugs doing a ton of extra damage and
+outright killing all swarmers trying to come through that chokepoint.</li>
+<li><strong>Hot Bullets</strong> is probably the meta pick for 6x2 on almost any minigun build, and unsurprisingly
+it goes great with bullet hell as well. You lose out on the personal safety of aggressive venting,
+and gain huge offensive power. Stunning a wall of grunts and igniting all of the guards and slashers
+can do a lot of damage. Stun and hot bullets work in tandem to ignite a target and stun other nearby
+targets. This results in very effective fire spread. The lower damage of bullet hell here actually
+helps in a way, preventing ignited targets from dying too quickly to spread heat to their neighbors.
+In sandbox (terrible terrain to fight with bullet hell) with hot bullets, stun, and bullet hell I
+can beat 100 hazard 6 slashers at once so it's not terrible at defense, just not as good as
+aggressive venting. The combination of fire spread, stun, and kiting is enough to keep them just in
+the sweet spot where they can't quite get you before burning to death. The other huge benefit of hot
+bullets is the ability to ignite distant targets to then use volatile bullets bulldog on. The margin
+for error is much thinner than aggressive venting, if you accidentally overheat you are in big
+trouble.</li>
+</ul>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/K7RDSojfxKM" title="YouTube video player" width="560"></iframe>
+<figcaption>Beating 100 Hazard 6 slashers at once via fire spread from Hot Bullets, stun and kiting.</figcaption>
+</figure>
+<ul>
+<li><strong>Cold as the grave</strong> is a trap option. The other two options on t5 are significantly better for
+any build, and this is compounded by bullet hell doing very little damage outside of hot bullets or
+aggressive venting. Typically on reviews for bullet hell where the conclusion is that it is bad,
+they pick cold as the grave.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Verdict</p>
+<ul>
+<li>Pick <strong>T5A Aggressive Venting</strong> for a more defensive / close-quarters playstyle.</li>
+<li>Pick <strong>T5C Hot Bullets</strong> for a more aggressive / longer-range playstyle.</li>
+</ul>
+</div>
+<h2 id="summary-of-the-two-options">Summary of the Two Options<a class="headerlink" href="#summary-of-the-two-options" title="Permanent link">&para;</a></h2>
+<p>With all of this said we can divide the good bullet hell builds into 2:</p>
+<ol>
+<li><em>Offense</em> <strong>Hot bullets</strong> build: <strong>322X3</strong>; and</li>
+<li><em>Defensive</em> <strong>Aggressive Venting</strong> build: <strong>322X1</strong>.</li>
+</ol>
+<h2 id="secondary-and-grenades">Secondary and Grenades<a class="headerlink" href="#secondary-and-grenades" title="Permanent link">&para;</a></h2>
+<p>The strongest secondaries are ones that will round out your build with high direct single target
+damage. It's also important to note that you do NOT want a secondary that will be used for a long
+period of time. You don't want the gun cooling too much with hot bullets, typically you will ignite
+a target and swap to bulldog, take a few shots and swap back to keep your heat in the red. With
+aggressive venting, you only have 5 seconds of downtime after a vent, you want to be back on minigun
+firing as soon as you can to begin building up the heat meter again. This means <abbr title="BRT7 Burst Fire Gun">BRT</abbr> in general is a
+bad choice since it typically requires a lot of time to have any impact. The coilgun is in the same
+boat since it requires charging before firing. Coilgun is in a weird place balance wise though, its
+hard not to recommend <em>222x3 Hellfire</em> with any primary since its so powerful, but it doesn't really
+compliment bullet hell very well so I will ignore it.</p>
+<p>For the <em>Hot Bullets</em> build I use <a href="../volatile-bullets/">2332X Volatile Bullets</a> bulldog. This lets
+you ignite and snipe things from across the map, combined with bullet hell's ability to quickly find
+and kill leeches in the dark this build is extremely efficient at clearing out a new cave solo.</p>
+<p>For the <em>Aggressive Venting</em> build solo I will usually take <em>2332X Elephant Rounds</em>. Aggressive
+Venting usually won't ignite most targets you would want to hit with volatile bullets like
+praetorians, or oppressors. Instead you can just rely on the fear and good old elephant rounds to
+deal with big targets.</p>
+<p>For grenades if I am taking <a href="../volatile-bullets/">Volatile Bullets</a> I will take <em>incendiary
+grenades</em> for the extra ignition source. Sometimes you just don't have the time to wait for your gun
+to heat up enough to ignite something, or you have a lot of small targets around a big one you want
+to hit with volatile bullets. The incendiary grenade can also be taken with volatile bullets and
+aggressive venting if you use it primarily as a source of ignition for large targets such as
+praetorians and oppressors. Though this still won't help you with longer range targets.</p>
+<p>As always, you can take <em>cluster grenades</em> if you are good with them, they are much higher immediate
+impact grenades than incendiary. You can even take them with hot bullets and volatile bullets if you
+want an additional source of stun instead of an extra ignition source. It's hard to go wrong with
+incendiary or cluster grenades both are extremely powerful.</p>
+<h2 id="playstyle-and-tips">Playstyle and Tips<a class="headerlink" href="#playstyle-and-tips" title="Permanent link">&para;</a></h2>
+<p>Bullet hell is a very aggressive playstyle, with either hot bullets or aggressive venting. Most of
+your damage is coming from fire in one form or another, so positioning and heat management is even
+more important than it is for other minigun builds. In addition bullet hell adds a lot of utility to
+your kit which should not be ignored.</p>
+<ul>
+<li>You almost exclusively want to fight in small corridors and hallways. Fighting out in the open is
+  death. You lose all the benefit of heat and fire spread if the bugs can separate out and stay far
+  away from one another.</li>
+<li>The minigun cools slower the hotter it is. In order to stay in the red and keep hot bullets online
+  you should aim to keep your heat hovering around 75%-85%. This keeps it at the perfect cooling
+  speed to kite. Keep firing up to 85% heat, stop firing, turn toward the direction oyou want to go,
+  jump and flick your aim back toward the enemies, start firing and the gun should roughly be at 75%
+  heat again. This rhythm will also keep your gun full spun up most of the time for the 15% damage
+  bonus. See <a href="https://youtu.be/K7RDSojfxKM">DRG - hot bullets/stun/bullet hell vs 100 slashers</a> for
+  a demonstration.</li>
+<li>With aggressive venting, stun enemies in such a way that they make an arc you can move into, you
+  want the bugs to surround you right as you vent.</li>
+<li>The playstyle with aggressive venting is very aggressive. Learn how much time it takes to vent
+  from anywhere on the heat meter so you know when to start wading into the bugs to get the optimal
+  vent off.</li>
+<li>Venting causes massive fear which is not only great for personal safety, but if you can force bugs
+  to retreat through a small chokepoint they will do massive damage with heat spread to other bugs,
+  and also you can now hold the chokepoint again.</li>
+<li>Bullet hell is the ultimate leech killer. Even from outside a cave entrance you can often times
+  accidentally find and kill leeches. Flick bullets over the ceiling randomly to find leeches
+  quickly.</li>
+</ul>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cvR5boLShtU?start=1012" title="YouTube video player" width="560"></iframe>
+<figcaption>Using Bullet Hell to scan for leeches</figcaption>
+</figure>
+<ul>
+<li>Bullet hell can be used to find enemies around a corner that do not have line of sight on you. This
+  can often be useful for sniping an acid spitter before it even sees you. It is often worth it to
+  shoot a few bullets at a dark corner or unknown area to find threats. If no health bars pop up
+  that area is empty.</li>
+<li>With hot bullets your target priority is a little different than normal minigun. Deal with high
+  threat low HP targets as normal, such as web and acid spitters. Most other threats however can be
+  stunned and left alone such as slashers and trijaws. Instead you want to stun and ignite them and
+  then move on to another target. Your goal isn't to kill bugs with bullets, it's to set as many
+  bugs on fire as possible. This also means tanky bugs are a great target such as guards, since they
+  will ignite and burn for a long time while presenting a very low threat.</li>
+<li>Aggressive venting will often times knock down stalactites from the ceiling seemingly way too far
+  away. When clearing out a PE or Refinery mission cave initially, bullet hell can be used to gather
+  up bugs like normal all around you. If you stand under some stalactites the vent will cause fire
+  fear and a rain of death from above.</li>
+</ul>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/orNf1w1P4kM" title="YouTube video player" width="560"></iframe>
+<figcaption>Using Aggressive Venting to knock down stalactites</figcaption>
+</figure>
+<ul>
+<li>Bullet hell can stun things behind you. Depending on your situation you can often rely on bullet
+  hell to stun enemies behind you without looking. This is a huge boon on your attention economy
+  letting you focus on the enemies that matter more.</li>
+</ul>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/FIAoP9OWSbU?start=991" title="YouTube video player" width="560"></iframe>
+<figcaption>This clip shows one case where I identified the number of enemies coming in from behind me was low, so I let bullet hell bounces deal with it while I built up heat for an aggressive vent on the oppressor.</figcaption>
+</figure>
+<h2 id="vods">VODs<a class="headerlink" href="#vods" title="Permanent link">&para;</a></h2>
+<p>Assorted videos using <em>Bullet Hell</em> on Hazard 6x2:</p>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cvR5boLShtU" title="YouTube video player" width="560"></iframe>
+</figure>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/FIAoP9OWSbU?start=1022" title="YouTube video player" width="560"></iframe>
+</figure>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/i3VcKYyIfKk" title="YouTube video player" width="560"></iframe>
+</figure>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/-m8RVwtwY6k" title="YouTube video player" width="560"></iframe>
+</figure>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/KD3kk2vHI1A" title="YouTube video player" width="560"></iframe>
+</figure>
+<figure>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/YewjhXuiCoE" title="YouTube video player" width="560"></iframe>
+</figure>
+<h2 id="isnt-it-just-the-base-auto-cannon-but-worse">Isn't it just the base auto cannon but worse?<a class="headerlink" href="#isnt-it-just-the-base-auto-cannon-but-worse" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Incoming Rant</p>
+</div>
+<p>No. Not even remotely.</p>
+<p>This is a common opinion of spreadsheet jockeys that look at the damage numbers and conclude that it
+just "turns the minigun into a weak autocannon" since it can only hit 2-3 targets per bullet. They
+then take it into missions using blowthrough and cold as the grave, and play it exactly like the
+autocannon, as uncreativly as possible and conclude that its a bad autocannon.</p>
+<p>Thinking about bullet hell for even a few seconds should be enough to realize this isn't true.
+Autocannon can't hit enemies behind you. Autocannon, can't shoot around corners. Autocannon can't
+seek out and kill all leeches in a massive cave in seconds. Autocannon doesn't stun. Autocannon has
+horrific accuracy and anything farther away than 20m is might as well be out of range. Splash from
+autocannon doesn't do weakpoint damage. The autocannon can't apply heat, the most overpowered status
+effect in the game. At this point I'm tired of coming up with things and listing them, I'm sure I
+could keep going for a lot longer.</p>
+<p>In general the autocannon is not a flexible weapon. And lacks a coherent, smooth combat loop. The
+minigun by comparison is fantastically flexible and has a well designed (probably on accident)
+combat loop. The main reason the the autocannon performs well in the vanilla game, and to some
+extent starship troopers one of the more popular "difficulty" mods, is low enemy variety. The AC
+excels at killing non-vetran grunts. And haz &lt;=5 provides basic grunts coming at you slowly from one
+direction in spades. This weak enemy composition does not force you to split your attention and will
+not punish mistakes.</p>
+<p>Once you get to hazard 6+ levels of enemy variety the autocannon falls off a massive cliff. The bugs
+are faster, and the quantities mean they spread out and flank you much more often. The autocannon
+struggles to even deal with grunts in modded difficulty because of the increased speed and variety.
+Guards will regularly make it through to you, blocking tons of shots that would normally be hitting
+slashers and grunts. They can force you back much more effectively, and split your attention dealing
+with flanking grunts, costing you a lot of time retreating and then taking back space after the wave
+is over. On haz 6+ this is pretty much a death sentence. Simply by taking the minigun over the
+autocannon you can mitigate almost all of these problems. The ability to stun enemies is huge. For
+example, if a menace spawns 20m away autocannon needs to seek cover, or blow a shield. Minigun will
+flick to it until the stun icon pops up (usually a fraction of a second) and then go back to
+ignoring it. This can usually be done in your normal kiting cycle while in the air from a bunny hop
+and costs almost nothing. The larger the enemy variety the worse the disparity between economy of
+attention gets. The autocannon just can't deal with anything that isn't grunts in an time efficient
+way. Whereas the minigun with stun can easily shift focus to deal with something in a fraction of a
+second, and shift back. Now when you take bullet hell on the stun minigun, you don't even need to
+aim at the threats you want to stun. You just need to aim near them. Over the course of a swarm this
+results in a huge savings of attention that normally you would need to spend on special threats. One
+of the biggest advantages of bullet hell is having all of this free attention to reinvest during a
+swarm. In that regard I would actually argue that autocannon and bullet hell are polar opposites.</p>
+<p>Now lets consider another issue with hazard 6x2. Increased stationary enemies. Autocannon SUCKS at
+breaking into a fresh cave. Its bad accuracy means it can't at all deal with spitballers and
+breeders at a distance, and even leeches are iffy since your rounds can go right past their grasping
+arm even at point blank. It sucks at dealing with naedocytes. The minigun again deals with all of
+this better. You can easily pick off spitballers using the weakpoint, and shoot down the spitballer
+projectiles. You can laser focus on the breeder weakpoint and shoot down all the naedocytes. Bullet
+hell improves this even more by adding the ability to quickly check for leeches without needing
+light, and mopping up naedocytes and swarmers without even needing to look at them. This means you
+can now escape into an unexplored cave without needing to gamble on a leech not being present. With
+hot bullets and volatile bullets a minigunner can empty a cave of threats very rapidly, whereas the
+autocannon is at the mercy of the cave generation to give it small caves to clear.</p>
+<p>On top of all of this the autoacannon has a bad combat loop, and poor synergy with secondary
+weapons. The autocannon is designed as a crowd clearing AoE weapon. This holds up fine on hazard 5
+even up to double enemies. However the downside is the 5 second mandatory reload you can't get
+around. During this time the gun is non functional, the only damage it can deal is toxin you have
+previously already set with Neurotoxin Payload. Without the enemy speed buffs and numbers, on haz
+4/5 you tend to get a trickle of trash enemies, then a few slow praetorians behind that are easy to
+kill in isolation. This is not the case in haz 6x2, the grunts are constant, and the praetorians
+will be a part of their wave which means you need to deal with them at the same time as the grunts.
+In tunnels their acid spray can actually be dangerous. If you do not clear them quickly more will
+catch up and start spraying till you wind up with 5-6 praetorians 2-3 oppressors all mixed in with
+grunts. In tight spaces this is a death sentence. Whether or not you have time to reload is almost
+entirely a matter of luck or burning shields. A damage oriented minigun build can clear them itself
+just fine, and bullet hell with elephant rounds or volatile bullets can stunlock and execute them
+with no problem. You also tend to be up close and brawling anyway since you are trying to maximize
+aggressive venting, which makes weaving in power attacks easier. Crowd control autocannon builds
+will struggle and eventually get zoned off with too many acid/oppressor attacks going off and get
+killed by a spitter or slasher. To combat this you need to take fear to turn praetorians around, and
+elephant rounds to kill them quickly. Now the issue is that on haz 6x2 you don't have that freedom,
+since when you are reloading you are completely helpless and will be killed or heavily damaged in
+that 5 seconds without a strong crowd control secondary such as hellfire, electro mines or maybe
+explosive magic bullets. The minigun gets around this by covering for itself while overheating with
+aggressive venting. The damage and space that venting creates is as if you never stopped firing, in
+may cases its actually a lot stronger than if you had just been firing that whole time. Combined
+dash/vent/stun/bullet hell/shield is a perfect combat loop with plenty of survival and tools that
+all chain together smoothly. You don't need any other tools which frees your secondary slot up to
+pick elephant rounds or volatile bullets to finish off the build and handle any threat. On top of
+all that, the minigun also has the option of just not overheating. You are in charge of your heat
+buildup and can change your firing rhythm to control when, or if you overheat at all.</p>
+<p>Now... lets talk about consistency. On hazard 6x2 the wave timer is extremely tight. Only giving you
+1-2 minutes at at time without a wave or swarm. Relying on the autocannon to clear takes a lot of
+time, even with its strongest OCs. Neurotoxin requires a lot of waiting around for the damage over
+time to kill things. And Big Bertha requires you to be in a state of perpetual reload since the
+magazine is so small. You spend a lot of time kiting backwards away from spawns waiting to reload or
+for them to die to toxin. Once you manage to clear and push forward the next wave is often times
+spawning, trapping you in a perpetual loop of combat. Minigun with stun and aggressive venting can
+much more consistently push into and through a swarm to get to the other side. Using a shield to
+collect nitra in the next room if needed. The autocannon will usually need that shield to push
+through in the first place. In general this means the minigun can complete runs more consistently
+than the autocannon because you can breach into caves faster, spend less time running from swarms,
+and generally are quicker.</p>
+<p>This is not all saying the autocannon is unusable. Its just a much worse designed weapon than the
+minigun. With sufficient skill with kiting, and some luck you can make it work solo. And on teams
+NTP is very usable, but its still just a weak version of sticky fuel driller. You are always better
+of bringing sticky fuel and a minigun over NTP. Minigun will always give you more flexibility and
+options in any given situation.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-09-12 18:59:58</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../burning-hell/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Burning Hell" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Burning Hell
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lsls/" class="md-footer__link md-footer__link--next" aria-label="Next: Lead Storm" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Lead Storm
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

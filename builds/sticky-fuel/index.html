@@ -1,0 +1,1641 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/placeholder-favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>Sticky Fuel - Technical DRG Archives</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-breakdown-sticky-fuel-drillers-crspr-modded-hazard-6x2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Technical DRG Archives" class="md-header__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical DRG Archives
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sticky Fuel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../data/" class="md-tabs__link">
+        Data
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guides/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Builds
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../breakdowns/" class="md-tabs__link">
+        Breakdowns
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../game-mechanics/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tips-and-tricks/" class="md-tabs__link">
+        Tips and Tricks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Technical DRG Archives" class="md-nav__button md-logo" aria-label="Technical DRG Archives" data-md-component="logo">
+      
+  <img src="../../assets/placeholder-logo.png" alt="logo">
+
+    </a>
+    Technical DRG Archives
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Technical-DRG/Technical-DRG-Archives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Technical-DRG/Technical-DRG-Archives
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../data/">Data</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/gk2-bp-aise-vs-bom/" class="md-nav__link">
+        A look at GK2 Breakpoints with AI Stability Engine and Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/m1000-classic-breakpoints/" class="md-nav__link">
+        M1000 Classic Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/volatile-bullets-vs-elephant-rounds-breakpoints/" class="md-nav__link">
+        Volatile Bullets and Elephant Rounds Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/lok1-executioner-breakpoints/" class="md-nav__link">
+        LOK-1 Executioner Breakpoints
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../guides/">Guides</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/intro-modded-difficulties/" class="md-nav__link">
+        An Introduction to Modded Difficulties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Builds</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Builds" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Builds
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sticky Fuel
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Sticky Fuel
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-breakdown-of-sticky-fuel" class="md-nav__link">
+    A Breakdown of Sticky Fuel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sticky-fuel" class="md-nav__link">
+    Why Sticky Fuel?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1" class="md-nav__link">
+    Tier 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2" class="md-nav__link">
+    Tier 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3" class="md-nav__link">
+    Tier 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4" class="md-nav__link">
+    Tier 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5" class="md-nav__link">
+    Tier 5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secondary-and-grenades" class="md-nav__link">
+    Secondary and Grenades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playstyle-and-tips" class="md-nav__link">
+    Playstyle and Tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-sludge" class="md-nav__link">
+    Why Not Sludge?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../burning-hell/" class="md-nav__link">
+        Burning Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bullet-hell/" class="md-nav__link">
+        Bullet Hell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsls/" class="md-nav__link">
+        Lead Storm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volatile-bullets/" class="md-nav__link">
+        Volatile Bullets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m1000/" class="md-nav__link">
+        Multi-Choice M1000 Classic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stunner/" class="md-nav__link">
+        Stunner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../breakdowns/">Breakdowns</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Breakdowns
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/">Game Mechanics</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/perks/">Perks</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Perks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Perks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/perks/unstoppable/" class="md-nav__link">
+        Unstoppable
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../game-mechanics/weapons-overclocks/">Weapons and Overclocks</a>
+          
+            <label for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Weapons and Overclocks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Weapons and Overclocks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-mechanics/weapons-overclocks/bullets-of-mercy/" class="md-nav__link">
+        Bullets of Mercy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tips-and-tricks/">Tips and Tricks</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tips and Tricks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips and Tricks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/grenade-cancelling/" class="md-nav__link">
+        Grenade Cancelling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips-and-tricks/gameusersettings/" class="md-nav__link">
+        GameUserSettings.ini
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-breakdown-of-sticky-fuel" class="md-nav__link">
+    A Breakdown of Sticky Fuel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sticky-fuel" class="md-nav__link">
+    Why Sticky Fuel?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1" class="md-nav__link">
+    Tier 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2" class="md-nav__link">
+    Tier 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3" class="md-nav__link">
+    Tier 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4" class="md-nav__link">
+    Tier 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5" class="md-nav__link">
+    Tier 5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secondary-and-grenades" class="md-nav__link">
+    Secondary and Grenades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playstyle-and-tips" class="md-nav__link">
+    Playstyle and Tips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-sludge" class="md-nav__link">
+    Why Not Sludge?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../tags/#build" class="md-tag">
+          build
+        </a>
+      
+    
+      
+        <a href="../../tags/#crspr" class="md-tag">
+          crspr
+        </a>
+      
+    
+      
+        <a href="../../tags/#sticky-fuel" class="md-tag">
+          sticky-fuel
+        </a>
+      
+    
+      
+        <a href="../../tags/#sticky-flames" class="md-tag">
+          sticky-flames
+        </a>
+      
+    
+      
+        <a href="../../tags/#flamethrower" class="md-tag">
+          flamethrower
+        </a>
+      
+    
+      
+        <a href="../../tags/#driller" class="md-tag">
+          driller
+        </a>
+      
+    
+      
+        <a href="../../tags/#hazard-6x2" class="md-tag">
+          hazard-6x2
+        </a>
+      
+    
+      
+        <a href="../../tags/#overclock" class="md-tag">
+          overclock
+        </a>
+      
+    
+      
+        <a href="../../tags/#team" class="md-tag">
+          team
+        </a>
+      
+    
+  </nav>
+
+
+
+  <a href="https://github.com/Technical-DRG/Technical-DRG-Archives/edit/main/docs/builds/sticky-fuel.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="build-breakdown-sticky-fuel-drillers-crspr-modded-hazard-6x2">Build Breakdown: Sticky Fuel (Driller's CRSPR, Modded Hazard 6x2)<a class="headerlink" href="#build-breakdown-sticky-fuel-drillers-crspr-modded-hazard-6x2" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Post Info</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>u/Virryn__</td>
+</tr>
+<tr>
+<td>Post Date</td>
+<td>2022-05-29</td>
+</tr>
+<tr>
+<td>Intended Difficulty</td>
+<td>Modded, e.g. 5x2, 6x2, 7x1.5</td>
+</tr>
+<tr>
+<td>Original Post Link</td>
+<td><a href="https://www.reddit.com/r/technicaldrg/comments/uzy4uq/build_breakdown_sticky_fuel_drillers_crspr_modded/">BUILD BREAKDOWN: Sticky Fuel (Driller's CRSPR) [MODDED: Haz6x2]</a></td>
+</tr>
+</tbody>
+</table>
+<p>Since no one else has posted anything here yet, I figured I'd break the ice with one of the most
+popular and powerful builds in modded difficulties. I'm new to Reddit so forgive any weird
+formatting issues. In the context of this post, "modded difficulties" mostly means difficulties with
+enemy count multipliers, such as 5x2, 6x2, 7x1.5, etc.</p>
+<p>All numbers in this post were taken directly from the Equipment Terminal in-game.</p>
+<h2 id="a-breakdown-of-sticky-fuel">A Breakdown of Sticky Fuel<a class="headerlink" href="#a-breakdown-of-sticky-fuel" title="Permanent link">&para;</a></h2>
+<p>Driller as a class is heavily focused on crowd control and trash clear. While he has some options
+for large burst damage (Ice Spear, Volatile Impact Mixture, Sludge Blast), he shines best when built
+for quick and easy deletion of large squishy crowds. Nothing in Driller's kit (and quite frankly,
+almost nothing in the entire game, bar maybe Neurotoxin Payload) does this more safely and
+efficiently than Sticky Fuel.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>TL;DR: 23232 Sticky Fuel is optimal. Combine with <abbr title="Thin Containment Field">TCF</abbr> <abbr title="Experimental Plasma Charger">EPC</abbr> and axes.</strong></p>
+</div>
+<h2 id="why-sticky-fuel">Why Sticky Fuel?<a class="headerlink" href="#why-sticky-fuel" title="Permanent link">&para;</a></h2>
+<p>Fuel Stream Diffuser and Compact Feed Valves are both competitive builds for the sticky flames
+playstyle on Hazard 5. However, the increased enemy speed on Haz6 and Haz7 means that the extra
+sticky flame damage that Sticky Fuel provides becomes necessary to kill Grunts and their
+counterparts in as few lines of sticky as possible, before they walk through the sticky and another
+line becomes necessary. While this doesn't really impact your overall ammo usage, it becomes very
+apparent during swarm pressure; if you need to apply another line of sticky that's closer to you,
+that means bugs are gaining ground ever so slightly on you, and Sticky Fuel helps to alleviate this
+pressure. It's important to note that Grunt, Guard, and Slasher health does not increase in modded
+difficulties; in fact, Grunts in a 4-player Haz7 lobby have the exact same health as Grunts in a
+Haz4 solo mission. The extra sticky flame damage also does help to kill tankier enemies more
+quickly, such as Spitballers, Praetorians, Menaces, etc.</p>
+<p>The extended sticky flame duration from Sticky Fuel also gives you a lot more <strong>attention economy</strong>.
+In a horde shooter such as Deep Rock, your attention is divided between aspects of the game such as
+trash enemies, special enemies, large enemies, and even at times the objective. The difference
+between an 8-second line of sticky with Fuel Stream Diffuser versus an 11- or 14-second line with
+Sticky Fuel may not seem large, but in the heat of the moment, 3 seconds is a long time; gaining 3
+seconds of attention to use on moving to the opposite side of a room to place down another line of
+sticky can be the difference between a safe defensive position and being overrun.</p>
+<h2 id="tier-1">Tier 1<a class="headerlink" href="#tier-1" title="Permanent link">&para;</a></h2>
+<p>On the first tier of the CRSPR we have two choices: <strong>High Capacity Tanks</strong>, an additional 25 ammo
+in the magazine, or <strong>High Pressure Ejector</strong>, an additional 5 meters of applicable range. While the
+obvious choice seems to be increased magazine size to counter the 25 mag reduction that comes with
+Sticky Fuel, the range increase is actually the optimal choice, for two reasons.</p>
+<ol>
+<li>Sticky Fuel is powerful enough that there are almost no situations where you need to quickly
+expend 50 ammo to keep yourself safe. Sticky Fuel is not worth using as an offensive burst tool; if
+you have time to place sticky flames safely, you should also have time to reload safely, otherwise,
+you should be drilling out of that situation or running towards a teammate or Gunner shield. A
+magazine of 25 is more than enough to place a line or two of sticky on both sides of a defense
+point.</li>
+<li>Range allows you to place sticky flames much further away from yourself (obviously). On modded
+difficulties, a sticky Driller is required to continually apply sticky to both sides of a defense
+point (salvage, black boxes, etc.). With the range upgrade, you need to move a lot less to cover the
+necessary points with sticky, and thus you end up with more time to split your attention elsewhere.
+(Range also helps in general usage, but its effect is more obvious with a static reference point.)</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Verdict</p>
+<p>Take option 2, <strong>T1B High Pressure Ejector</strong>.</p>
+</div>
+<h2 id="tier-2">Tier 2<a class="headerlink" href="#tier-2" title="Permanent link">&para;</a></h2>
+<p>Tier 2 gives us three options. <strong>Unfiltered Fuel</strong> gives us 4 extra damage on the <strong>direct flame
+only</strong>. <strong>Triple Filtered Fuel</strong> adds 10 heat applied per damage tick, for a total of 20, and
+<strong>Sticky Flame Duration</strong> adds 3 more seconds of sticky.</p>
+<ul>
+<li>Extra direct damage on a sticky-focused build is useless.</li>
+<li>Extra heat, while slightly useful for igniting targets for a <a href="../volatile-bullets/">Volatile
+Bullets</a> Gunner, is still overshadowed by longer sticky flames. However,
+Triple Filtered Fuel is a good choice when facing Rival enemies.</li>
+<li>3 seconds of sticky, combined with Sticky Fuel itself, gives us 11 seconds of sticky per
+application so far. This is a fairly obvious choice for a sticky-based playstyle.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Verdict</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Rival Presence missions, Industrial Sabotage</label><label for="__tabbed_1_2">Everything else</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Take option 2, <strong>T2B Triple Filtered Fuel</strong>, for Rival Presence missions or Industrial
+sabotage.</p>
+</div>
+<div class="tabbed-block">
+<p>Take option 3, <strong>T2C Sticky Flame Duration</strong> for anything else, or Rival missions where your
+teammates are also building for fire and can handle bots easily.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="tier-3">Tier 3<a class="headerlink" href="#tier-3" title="Permanent link">&para;</a></h2>
+<p>Another three-option row, we're given the choice between:</p>
+<ol>
+<li><strong>Oversized Valves</strong>: a 30% increase in flow rate;</li>
+<li><strong>Sticky Flame Slowdown</strong>, which slows enemies that travel through sticky flames; and</li>
+<li><strong>More Fuel</strong>, an extra 75 max ammo.</li>
+</ol>
+<p>Here, we again have an opportunity to counter one of Sticky Fuel's downsides, this time being the 75
+ammo loss. However, slowing enemies that travel through your flames is essential to this build, and
+the next tier lets us make up for that ammo penalty anyways.</p>
+<div class="admonition tip">
+<p class="admonition-title">Verdict</p>
+<p>Take option 2, <strong>T3B Sticky Flame Slowdown</strong>.</p>
+</div>
+<h2 id="tier-4">Tier 4<a class="headerlink" href="#tier-4" title="Permanent link">&para;</a></h2>
+<p>Again a triple row, but this one is more interesting than the previous. <strong>It Burns!</strong> gives us 20% Fear
+factor on direct damage ticks, <strong>Sticky Flame Duration</strong> gives us another 3 seconds of sticky, and
+<strong>More Fuel</strong> gives us 75 more ammo.</p>
+<ul>
+<li>I won't get into Fear calculations in this post, but I'm not sure why you would want to take It
+Burns! even in a direct damage build, let alone a sticky build. The chance seems pretty tiny, it
+forces the enemy to run away from your damage (as opposed to something like the Thunderhead's Fear,
+where the Thunderhead is a long range hitscan weapon), and most direct damage CRSPR builds are
+focused on taking advantage of <strong>Heat Radiance</strong>, which relies on enemies being close to you. Don't use
+this mod in a sticky build.</li>
+<li>3 more seconds of sticky is a nice bonus, but with Sticky Fuel and Sticky Flame Duration on Tier
+2, we're already at 11 seconds of sticky duration. That's more than enough to bounce between two
+lines of sticky if needed, but some players do prefer to take this mod over the ammo increase.</li>
+<li>A 75 ammo increase is incredibly valuable. This bumps your max ammo up to 300 (+25 mag), which can
+take you FAR in a mission. If you play this build well, on Haz5 you'll likely have more than half
+your sticky left when your pub teammates are chewing through their second resupply.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Verdict</p>
+<p>Take option 2 <strong>T4B Sticky Flame Duration</strong> or 3 <strong>T4C More Fuel</strong>; 3 has more overall sticky
+duration, while 2 can give you more immediate attention economy. 2 is also a good option if you
+want to force yourself to learn to be more  efficient in your sticky play.</p>
+</div>
+<h2 id="tier-5">Tier 5<a class="headerlink" href="#tier-5" title="Permanent link">&para;</a></h2>
+<p>This will likely be the most controversial tier. <strong>Heat Radiance</strong> heats enemies in an area around
+you while you are firing the CRSPR, while <strong>Targets Explode</strong> gives you a 50% chance when killing an
+enemy with direct fire for the target to explode.</p>
+<p>This may come as a surprise, but the optimal choice is actually Targets Explode. Why?</p>
+<ol>
+<li><strong>Heat Radiance</strong>, with a 25 magazine size and a sticky-based playstyle, does almost nothing for
+you. If you're playing Heat Radiance offensively, you should build for it with something like
+Compact Feed Valves. If you're playing it defensively, 25 ammo in your mag isn't going to save you.
+If you're playing Sticky Fuel and are in range of the bugs, you should be drilling away rather than
+trying to kill things with Heat Radiance.</li>
+<li><strong>Targets Explode</strong> does not proc on sticky flame kills. HOWEVER, this is not the purpose of
+Targets Explode. Targets Explode is used almost EXCLUSIVELY on clouds of Naedocytes and the river of
+Swarmers that erupts when a Brood Nexus is popped. These enemies are admittedly not substantial
+threats on Haz 5. However, on modded difficulties with increased enemy multipliers, these can get
+out of hand very quickly. A breeder or two left alive in a salvage room for long enough can produce
+hundreds of jellies, so it helps to have a method to deal with them as Driller. Similarly, Shocker
+clouds spawning on top of players can be a death sentence if not dealt with immediately, and Targets
+Explode can wipe out quite a few of them if it manages to proc. Sadly Targets Explode is not very
+effective against Shredders, as they have a slightly larger health pool.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Verdict</p>
+<p>Take option 2, <strong>T5B Targets Explode</strong>.</p>
+</div>
+<h2 id="secondary-and-grenades">Secondary and Grenades<a class="headerlink" href="#secondary-and-grenades" title="Permanent link">&para;</a></h2>
+<p>While the Wave Cooker has some interesting temperature shock synergy with sticky flames, it
+unfortunately doesn't stand up to <strong>Thin Containment Field</strong> in terms of versatility. Similarly, the
+precision the Subata gives doesn't make up for its pitiful damage output. The best secondary choice
+for Driller is the <abbr title="Experimental Plasma Charger">EPC</abbr> built for <abbr title="Thin Containment Field">TCF</abbr>; this allows you to easily handle clouds of Mactera, chunk some
+damage off of Praetorians and similarly tanky enemies, quickly mine objectives and minerals, and
+delete large amounts of terrain quickly when required. Persistent Plasma is also quite powerful, and
+provides an impressive amount of wave clear when applied right.</p>
+<p>Neurotoxin and HE grenades are mostly redundant on a class such as Driller. He already has plenty of
+primary and secondary setups for crowd clearing; therefore, a grenade that gives him some chunky
+single target damage is invaluable. Axes are the way to go.</p>
+<h2 id="playstyle-and-tips">Playstyle and Tips<a class="headerlink" href="#playstyle-and-tips" title="Permanent link">&para;</a></h2>
+<p>A Sticky Fuel Driller becomes the cornerstone of their team. You are the primary protection against
+Grunts and Swarmers, and you provide a quick and constant ignition source for a <a href="../volatile-bullets/">Volatile
+Bullets</a> Gunner, who acts as your heavy hitter against larger targets. For
+the most part, you become the team leader; you make the decisions, and the rest of the team either
+follows or more than likely gets overwhelmed. Taking Sticky Fuel allows the rest of the team to spec
+more heavily into special- and tank-clearing roles.</p>
+<ul>
+<li>Ideal sticky placement is a few distinct lines of sticky flames on a bug path. If you place sticky
+  multiple times on a single line, you're only getting one line worth of sticky damage; they do not
+  stack. You only need two or three lines to deal with most Grunt packs.</li>
+<li>Putting down a sticky circle around a resupply or downed teammate can allow you to take ammo or
+  revive without being interrupted and damaged by Grunts; however, if a Praetorian or Oppressor is
+  on a teammate, sticky flames are likely not going to cut it.</li>
+<li>Small puffs of sticky under tanky targets like Praetorians helps to keep them on fire and taking
+  damage. While minimal, you'll end up with less of them walking around with a sliver of health. The
+  slowdown also helps to keep them in place for precision classes to hit them more easily, and
+  prevents them from sneaking up on you and spitting at you quite as easily.</li>
+<li>While you should try to stay with your team and keep them alive, if a situation becomes
+  unwinnable, don't hesitate to drill away and lay a circle of sticky on the sides of your tunnel.
+  Sticky drilling is one of the safest setups in the game when played right, and you are a lot more
+  valuable alive alone than dead with your teammates.</li>
+<li>Don't use a direct stream of flame against anything except targets you are trying to kill with
+  Targets Explode. Always make an attempt to lay sticky beneath what you're shooting at instead,
+  then swap to your secondary or use your axes to do the majority of the damage. For Mactera, the
+  damage they take even with their innate weakness to Fire doesn't kill them very quickly, and
+  you're better off <abbr title="Thin Containment Field">TCF</abbr>-ing or axing them.</li>
+<li>Even without Barbed Drills, your drills have a high chance to both Fear and Stun enemies. When
+  you're about to hit by a Slasher or a Mactera, try to get in the habit of quickly switching to
+  your drills and going for a stun to get them to stop attacking. This works on Praetorians as well.</li>
+<li>This loadout shines most when in voice comms with teammates, where you can dictate how you're
+  going to move through the mission, which positions you're going to hold in, etc. Teammates that
+  run away from a sticky Driller will usually not end up surviving for long on modded difficulties.</li>
+</ul>
+<h2 id="why-not-sludge">Why Not Sludge?<a class="headerlink" href="#why-not-sludge" title="Permanent link">&para;</a></h2>
+<p>Besides some enemies in the game having a weakness to Fire and a resistance to Corrosive (because
+GSG hates the Sludge Pump I guess), sludge doesn't have the ease of placement that sticky flames
+does. You can place a sticky line immediately if you need to; if you want to put down sludge, you
+either have to settle for the tiny, dinky little single puddles that you can't place very fast, or
+you need to spend valuable time charging a shot that won't even stick to ceilings or walls very
+well. Ignited sludge can produce similar damage and slow to sticky, but requires more setup time and
+an ignite source, both of which are less than ideal. The unfortunate reality is that sludge is
+nowhere near as powerful as sticky is on modded difficulties.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2022-09-12 18:59:58</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Builds" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Builds
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../burning-hell/" class="md-footer__link md-footer__link--next" aria-label="Next: Burning Hell" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Burning Hell
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
