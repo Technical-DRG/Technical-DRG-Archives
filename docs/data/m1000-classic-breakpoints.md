@@ -10,6 +10,9 @@ tags:
     - electrifying-focus-shots
     - hipster
     - breakpoints
+    - overclock
+    - hazard-6
+    - hazard-6x2
 ---
 
 # M1000 Classic Breakpoints
